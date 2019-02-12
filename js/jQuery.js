@@ -144,10 +144,48 @@ const failures = {
     },
     animals: {
         painful: [
-
+            {
+                title: 'penguin slide',
+                intensity: 1,
+                gif: '<iframe src="https://giphy.com/embed/C9AuY1VOvurxm" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/C9AuY1VOvurxm">via GIPHY</a></p>'
+            },
+            {
+                title: 'boop',
+                intensity: 1,
+                gif: '<iframe src="https://giphy.com/embed/ELPtC7diADV2o" width="480" height="361" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/fail-manatee-ELPtC7diADV2o">via GIPHY</a></p>'
+            },
+            {
+                title: 'dolphin dab',
+                intensity: 2,
+                gif: '<iframe src="https://giphy.com/embed/fDkk1KwJKn160" width="480" height="328" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/funny-fail-lol-fDkk1KwJKn160">via GIPHY</a></p>'
+            },
+            {
+                title: 'rag-dog',
+                intensity: 2,
+                gif: '<iframe src="https://giphy.com/embed/3o7Zez01HKXvaLXiHS" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/afv-funny-fail-lol-3o7Zez01HKXvaLXiHS">via GIPHY</a></p>'
+            }
         ],
         embarrassing: [
-
+            {
+                title: 'top-heavy',
+                intensity: 1,
+                gif: '<iframe src="https://giphy.com/embed/JBeLqejGK61wc" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/dog-puppy-eating-JBeLqejGK61wc">via GIPHY</a></p>'
+            },
+            {
+                title: 'pathetic',
+                intensity: 1,
+                gif: '<iframe src="https://giphy.com/embed/yVMoeZwY3swhi" width="480" height="288" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/cat-fail-yVMoeZwY3swhi">via GIPHY</a></p>'
+            },
+            {
+                title: "dog inna' water",
+                intensity: 2,
+                gif: '<iframe src="https://giphy.com/embed/QLUE7bBjOJxe0" width="384" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/something-smells-fishy-QLUE7bBjOJxe0">via GIPHY</a></p>'
+            },
+            {
+                title: 'nice try, no banana',
+                intensity: 2,
+                gif: '<iframe src="https://giphy.com/embed/qqaBppAvhIkP6" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/fail-monkey-bnana-qqaBppAvhIkP6">via GIPHY</a></p>'
+            }
         ]
     }
 };
