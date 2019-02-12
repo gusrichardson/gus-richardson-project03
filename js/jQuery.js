@@ -49,9 +49,31 @@ const failures = {
     },
     nonBabies: {
         painful: [
-
+            {
+                title: "yoyo fail",
+                intensity: 1,
+                gif: '<iframe src="https://giphy.com/embed/KYXWGxC3gcCpq" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/fail-pain-yoyo-KYXWGxC3gcCpq">via GIPHY</a></p>'
+            },
+            {
+                title: "shameful display",
+                intensity: 1,
+                gif: '<iframe src="https://giphy.com/embed/NQL7Wuo2JSQSY" width="283" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/fail-fall-jump-NQL7Wuo2JSQSY">via GIPHY</a></p>'
+            },
+            {
+                title: "watermelon juice",
+                intensity: 2,
+                gif: '<iframe src="https://giphy.com/embed/RkHYWBm3VnfX2" width="480" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/ouch-fails-watermelon-RkHYWBm3VnfX2">via GIPHY</a></p>'
+            },
+            {
+                title: "no pain no gain",
+                intensity: 2,
+                gif: '<iframe src="https://giphy.com/embed/DuWJ9i10UXtf2" width="480" height="321" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/fail-ouch-pain-DuWJ9i10UXtf2">via GIPHY</a></p>'
+            }
         ],
         embarrassing: [
+            {
+
+            }
 
         ]
     },
