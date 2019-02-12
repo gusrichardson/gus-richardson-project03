@@ -96,9 +96,49 @@ const failures = {
     },
     sports: {
         painful: [
+            {
+                title: 'gymnast face slam',
+                intensity: 1,
+                gif: '<iframe src="https://giphy.com/embed/LI7DRrJeN0dIk" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/gymnastics-pro-LI7DRrJeN0dIk">via GIPHY</a></p>'
+            },
+            {
+                title: 'soccer ball rocket',
+                intensity: 1,
+                gif: '<iframe src="https://giphy.com/embed/Uzuuzhqol8cA8" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/daytonflyers-fail-Uzuuzhqol8cA8">via GIPHY</a></p>'
+            },
+            {
+                title: 'speeding train',
+                intensity: 2,
+                gif: '<iframe src="https://giphy.com/embed/SxXk5cYhCBq6c" width="480" height="393" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/cheezburger-fail-running-SxXk5cYhCBq6c">via GIPHY</a></p>'
+            },
+            {
+                title: 'pole vault',
+                intensity: 2,
+                gif: '<iframe src="https://giphy.com/embed/lQNZnqT9zSeaY" width="480" height="361" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/fail-pole-vault-lQNZnqT9zSeaY">via GIPHY</a></p>'
+            }
 
         ],
         embarrassing: [
+            {
+                title: 'job opening',
+                intensity: 1,
+                gif: '<iframe src="https://giphy.com/embed/l0MYC5rnAHehkVKRq" width="480" height="260" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/nfl-l0MYC5rnAHehkVKRq">via GIPHY</a></p>'
+            },
+            {
+                title: 'insult to injury',
+                intensity: 1,
+                gif: '<iframe src="https://giphy.com/embed/xYRvkBcJhbSr6" width="480" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/not-use-stretcher-xYRvkBcJhbSr6">via GIPHY</a></p>'
+            },
+            {
+                title: '0.5/10',
+                intensity: 2,
+                gif: '<iframe src="https://giphy.com/embed/dGqajH1xpsGcw" width="480" height="385" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/summer-fails-pool-fail-dGqajH1xpsGcw">via GIPHY</a></p>'
+            },
+            {
+                title: 'boomerang',
+                intensity: 2,
+                gif: '<iframe src="https://giphy.com/embed/5rxOiUZ4dq5Ww" width="480" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/fail-fall-falling-5rxOiUZ4dq5Ww">via GIPHY</a></p>'
+            }
 
         ]
     },
