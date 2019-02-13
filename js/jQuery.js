@@ -189,3 +189,13 @@ const failures = {
         ]
     }
 };
+
+$(document).ready(function () {
+    console.log("ready!");
+    $('form').on('submit', function (e) {
+        e.preventDefault();
+        console.log('do something');
+        const genre = $('input[name=painful-embarrassing]:checked').val();
+        console.log(genre);
+    })
+});

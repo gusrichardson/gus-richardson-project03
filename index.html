@@ -12,39 +12,60 @@
 <body>
     <div class="wrapper">
 
-        <div class="opener">
-            <h1>Fail Generator</h1>
-            <p>Can I interest you in a Painful or an Embarrassing Failure?</p>
+        <form action="">
 
-            <label for="painful-failure">Painful</label>
-            <input type="checkbox" name="painful" id="painful-failure">
+            <div class="opener">
+                <h1>Fail Generator</h1>
+                <p>Can I interest you in a Painful or an Embarrassing Failure?</p>
 
-            <label for="embarrassing-failure">Embarassing</label>
-            <input type="checkbox" name="embarrassing" id="embarrassing-failure">
-        </div>
+                <label for="painful-failure">Painful</label>
+                <input type="radio" name="painful-embarrassing" id="painful-failure" value="painful-failure">
 
-        <div class="secondQuestion">
-            <p>which category of (embarrassing) (painful) category would you most prefer?</p>
+                <label for="embarrassing-failure">Embarassing</label>
+                <input type="radio" name="painful-embarrassing" id="embarrassing-failure" value="embarrassing-failure">
+            </div>
 
-            <label for="baby-fail">Baby Fails</label>
-            <input type="checkbox" id="baby-fail">
+            <div class="second-question">
+                <p>which category of (embarrassing) (painful) category would you most prefer?</p>
 
-            <label for="non-baby-fail">Strictly Non-Baby</label>
-            <input type="checkbox" id="non-baby-fail">
+                <label for="baby-fail">Baby Fails</label>
+                <input type="checkbox" id="baby-fail">
 
-            <label for="animal-fail">Animal Fails</label>
-            <input type="checkbox" id="animal-fail">
+                <label for="non-baby-fail">Strictly Non-Baby</label>
+                <input type="checkbox" id="non-baby-fail">
 
-            <label for="sports-fail">Sports Fail</label>
-            <input type="checkbox" id="sports-fail">
-        </div>
+                <label for="animal-fail">Animal Fails</label>
+                <input type="checkbox" id="animal-fail">
 
-        <div class="thirdQuestion">
-            <p>How (painful) (embarrassing) do you prefer your fail to be?</p>
+                <label for="sports-fail">Sports Fail</label>
+                <input type="checkbox" id="sports-fail">
+            </div>
 
-            <label for="intensity">How intense?</label>
-            <input type="range" id="intensity" min="1" max="2">
+            <div class="third-question">
+                <p>How (painful) (embarrassing) do you prefer your fail to be?</p>
 
+                <label for="intensity">How intense?</label>
+                <input type="range" id="intensity" min="1" max="2">
+
+            </div>
+
+            <div class="fourth-question">
+
+                <p>Are you sure?</p>
+                <label for="proceed">Yes, proceed with failure</label>
+                <input type="checkbox" id="proceed">
+
+                <label for="do-not-proceed">No, give me something happy</label>
+                <input type="checkbox" id="do-not-proceed">
+
+                <input type="submit" id="submit-button">
+            </div>
+        </form>
+
+        <div class="answer">
+            <div class="gif-container">
+
+            </div>
         </div>
 
     </div>
