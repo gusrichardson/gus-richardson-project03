@@ -47,7 +47,7 @@ const failures = {
 
         ]
     },
-    nonBabies: {
+    "non-babies": {
         painful: [
             {
                 title: 'yoyo fail',
@@ -197,5 +197,13 @@ $(document).ready(function () {
         console.log('do something');
         const genre = $('input[name=painful-embarrassing]:checked').val();
         console.log(genre);
+        const category = $('input[name=category]:checked').val();
+        console.log(category);
+        const intensity = $('input[name=intensity').val();
+        console.log(intensity);
+        const proceed = $('input[name=to-continue]:checked').val();
+        console.log(proceed);
+        const failOptions = failures[category];
+        console.log(failOptions);
     })
 });

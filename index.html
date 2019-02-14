@@ -28,24 +28,24 @@
             <div class="second-question">
                 <p>which category of (embarrassing) (painful) category would you most prefer?</p>
 
-                <label for="baby-fail">Baby Fails</label>
-                <input type="checkbox" id="baby-fail">
+                <label for="babies">Baby Fails</label>
+                <input type="radio" id="babies" name="category" value="babies">
 
-                <label for="non-baby-fail">Strictly Non-Baby</label>
-                <input type="checkbox" id="non-baby-fail">
+                <label for="non-babies">Strictly Non-Baby</label>
+                <input type="radio" id="non-babies" name="category" value="non-babies">
 
-                <label for="animal-fail">Animal Fails</label>
-                <input type="checkbox" id="animal-fail">
+                <label for="animals">Animal Fails</label>
+                <input type="radio" id="animals" name="category" value="animals">
 
-                <label for="sports-fail">Sports Fail</label>
-                <input type="checkbox" id="sports-fail">
+                <label for="sports">Sports Fail</label>
+                <input type="radio" id="sports" name="category" value="sports">
             </div>
 
             <div class="third-question">
                 <p>How (painful) (embarrassing) do you prefer your fail to be?</p>
 
                 <label for="intensity">How intense?</label>
-                <input type="range" id="intensity" min="1" max="2">
+                <input type="range" id="intensity" name="intensity" min="1" max="4">
 
             </div>
 
@@ -53,10 +53,10 @@
 
                 <p>Are you sure?</p>
                 <label for="proceed">Yes, proceed with failure</label>
-                <input type="checkbox" id="proceed">
+                <input type="radio" id="proceed" name="to-continue" value="proceed">
 
                 <label for="do-not-proceed">No, give me something happy</label>
-                <input type="checkbox" id="do-not-proceed">
+                <input type="radio" id="do-not-proceed" name="to-continue" value="do-not-proceed">
 
                 <input type="submit" id="submit-button">
             </div>
