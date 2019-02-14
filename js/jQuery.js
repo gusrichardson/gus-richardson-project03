@@ -190,20 +190,40 @@ const failures = {
     }
 };
 
+//category = babies/ sports/ etc
+//genre = painful/ embarrassing
+
 $(document).ready(function () {
     console.log("ready!");
     $('form').on('submit', function (e) {
         e.preventDefault();
-        console.log('do something');
+
+        //babies/ non-babies/ etc
+        const demographic = $('input[name=category]:checked').val();
+        //painful or embarrassing
         const genre = $('input[name=painful-embarrassing]:checked').val();
-        console.log(genre);
-        const category = $('input[name=category]:checked').val();
-        console.log(category);
-        const intensity = $('input[name=intensity').val();
-        console.log(intensity);
+        const intensity = parseInt($('input[name=intensity').val());
         const proceed = $('input[name=to-continue]:checked').val();
-        console.log(proceed);
-        const failOptions = failures[category];
-        console.log(failOptions);
+
+        //store users chosen demographics from Failures object
+        const failOptions = failures[demographic];
+
+        //combine user's dem preference with genre  pref
+        const failOpGenre = failOptions[genre];
+        console.log(failOpGenre);
+
+        console.log(typeof intensity);
+        let failOpIntensity = [];
+
+        for (let i = 0; i < failOpGenre.length; i = i + 1) {
+            let currentItem = failOpGenre[i];
+            console.log(currentItem.intensity, intensity);
+            if (currentItem.intensity === intensity) {
+                failOpIntensity.push(currentItem);
+                console.log(`fail op intensity${failOpIntensity}`);
+            };
+            console.log(failOpIntensity);
+        }
+
     })
 });
