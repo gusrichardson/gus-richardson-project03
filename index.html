@@ -6,68 +6,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>FAIL GENERATOR</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:700i|Sigmar+One" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
     <div class="wrapper">
+        <div class="quiz-container">
+            <form action="">
 
-        <form action="">
+                <div class="opener">
+                    <h1>Fail Generator</h1>
+                    <p>Can I interest you in a Painful or an Embarrassing Failure?</p>
 
-            <div class="opener">
-                <h1>Fail Generator</h1>
-                <p>Can I interest you in a Painful or an Embarrassing Failure?</p>
+                    <label for="painful-failure">Painful</label>
+                    <input type="radio" name="painful-embarrassing" id="painful-failure" value="painful">
 
-                <label for="painful-failure">Painful</label>
-                <input type="radio" name="painful-embarrassing" id="painful-failure" value="painful">
+                    <label for="embarrassing-failure">Embarassing</label>
+                    <input type="radio" name="painful-embarrassing" id="embarrassing-failure" value="embarrassing">
+                </div>
 
-                <label for="embarrassing-failure">Embarassing</label>
-                <input type="radio" name="painful-embarrassing" id="embarrassing-failure" value="embarrassing">
-            </div>
+                <div class="second-question">
+                    <p>which category of (embarrassing) (painful) category would you most prefer?</p>
 
-            <div class="second-question">
-                <p>which category of (embarrassing) (painful) category would you most prefer?</p>
+                    <label for="babies">Baby Fails</label>
+                    <input type="radio" id="babies" name="category" value="babies">
 
-                <label for="babies">Baby Fails</label>
-                <input type="radio" id="babies" name="category" value="babies">
+                    <label for="non-babies">Strictly Non-Baby</label>
+                    <input type="radio" id="non-babies" name="category" value="non-babies">
 
-                <label for="non-babies">Strictly Non-Baby</label>
-                <input type="radio" id="non-babies" name="category" value="non-babies">
+                    <label for="animals">Animal Fails</label>
+                    <input type="radio" id="animals" name="category" value="animals">
 
-                <label for="animals">Animal Fails</label>
-                <input type="radio" id="animals" name="category" value="animals">
+                    <label for="sports">Sports Fail</label>
+                    <input type="radio" id="sports" name="category" value="sports">
+                </div>
 
-                <label for="sports">Sports Fail</label>
-                <input type="radio" id="sports" name="category" value="sports">
-            </div>
+                <div class="third-question">
+                    <p>How (painful) (embarrassing) do you prefer your fail to be?</p>
 
-            <div class="third-question">
-                <p>How (painful) (embarrassing) do you prefer your fail to be?</p>
+                    <label for="intensity">How intense?</label>
+                    <input type="range" id="intensity" name="intensity" min="1" max="2">
 
-                <label for="intensity">How intense?</label>
-                <input type="range" id="intensity" name="intensity" min="1" max="2">
+                </div>
 
-            </div>
+                <div class="fourth-question">
 
-            <div class="fourth-question">
+                    <p>Are you sure?</p>
+                    <label for="proceed">Yes, proceed with failure</label>
+                    <input type="radio" id="proceed" name="to-continue" value="proceed">
 
-                <p>Are you sure?</p>
-                <label for="proceed">Yes, proceed with failure</label>
-                <input type="radio" id="proceed" name="to-continue" value="proceed">
+                    <label for="do-not-proceed">No, give me something happy</label>
+                    <input type="radio" id="do-not-proceed" name="to-continue" value="do-not-proceed">
 
-                <label for="do-not-proceed">No, give me something happy</label>
-                <input type="radio" id="do-not-proceed" name="to-continue" value="do-not-proceed">
+                    <input type="submit" id="submit-button">
+                </div>
+            </form>
 
-                <input type="submit" id="submit-button">
-            </div>
-        </form>
+            <div class="answer">
+                <div class="gif-container">
 
-        <div class="answer">
-            <div class="gif-container">
-
+                </div>
             </div>
         </div>
-
     </div>
 
 

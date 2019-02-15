@@ -1,0 +1,30 @@
+.wrapper {
+    width: 100%;
+    padding: 100px 60px;
+    background:#ffd166;
+}
+
+.quiz-container {
+    width: 800px;
+    margin: 0 auto;
+    border: 2px solid red;
+}
+
+.gif-container {
+    width: 400px;
+    height: 400px;
+    border: 10px solid red;
+}
+
+iframe {
+    min-width: 100%;
+    width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    display: block;
+    // background-clip: border-box;
+}
+
+.second-question, .third-question, .fourth-question {
+    display: none;
+}
