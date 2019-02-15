@@ -17,7 +17,7 @@ const failures = {
                 gif: ' <iframe src="https://giphy.com/embed/F09NFq9b23Xpu" width="480" height="290" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/dog-fall-funny-gif-F09NFq9b23Xpu">via GIPHY</a></p>'
             },
             {
-                title: 'twerky mum bum',
+                title: 'twerky mum',
                 intensity: 2,
                 gif: '<iframe src="https://giphy.com/embed/h1ojsprlDCgbS" width="301" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/dancing-lol-mom-h1ojsprlDCgbS">via GIPHY</a></p>'
             },
@@ -208,6 +208,13 @@ $(document).ready(function () {
         })
     })
 
+    const randomVid = function (optionsArray) {
+        const index = Math.floor(Math.random() * optionsArray.length);
+        return optionsArray[index];
+    }
+
+    console.log(randomVid(failures.babies.embarrassing), 'this is another');
+
     $('form').on('submit', function (e) {
         e.preventDefault();
 
@@ -215,7 +222,7 @@ $(document).ready(function () {
         const demographic = $('input[name=category]:checked').val();
         //painful or embarrassing
         const genre = $('input[name=painful-embarrassing]:checked').val();
-        console.log(genre);
+        // console.log(genre);
         const intensity = parseInt($('input[name=intensity').val());
         const proceed = $('input[name=to-continue]:checked').val();
 
@@ -231,18 +238,16 @@ $(document).ready(function () {
             let currentItem = failOpGenre[i];
             if (currentItem.intensity === intensity) {
                 failOpIntensity.push(currentItem);
-                const randomGif = Math.floor(Math.random() * failOpIntensity.length);
-                console.log(randomGif);
+                randomVid(failOpIntensity);
+                console.log(randomVid(failOpIntensity), "this it the console");
             };
         }
-
         if (proceed === 'proceed') {
-            console.log(failOpIntensity);
-            $('.gif-container').html(failOpIntensity[1].gif);
+            // console.log(failOpIntensity);
+            $('.gif-container').html(randomVid(failOpIntensity).gif);
         } else {
             console.log('do something else');
             $('.gif-container').html('<iframe src="https://giphy.com/embed/8OJdqYqN1Nii3UTD6l" width="100%" height="100%" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>');
         }
-
     })
 });
