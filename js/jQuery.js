@@ -193,6 +193,11 @@ const failures = {
 
 $(document).ready(function () {
 
+    const arrowBounce = $('.down-arrow').hover(
+        function () { $(this).addClass('bounce') },
+        function () { $(this).removeClass('bounce') }
+    )
+
     $('input[name=painful-embarrassing').on('click', function () {
         $('.second-question').css({
             "display": "block",
