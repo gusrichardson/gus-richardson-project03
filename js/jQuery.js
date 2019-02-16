@@ -4,47 +4,45 @@ const failures = {
             {
                 title: 'slackline',
                 intensity: 1,
-                gif: '<iframe src="https://giphy.com/embed/f9RIpuEitaLuiczwFs" width="384" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>',
-                // gif: '<iframe src="https://giphy.com/embed/f9RIpuEitaLuiczwFs" width="384" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/monday-mondays-thud-f9RIpuEitaLuiczwFs"></a></p>'
+                gif: '<img src="images/slackline.gif" alt="a toddler rides a slackline into a padded wall">'
             },
             {
                 title: 'slide fail',
                 intensity: 1,
-                gif: '<iframe src="https://giphy.com/embed/BhbUcnKQvQiwE" width="480" height="362" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>',
-                // gif: '<iframe src="https://giphy.com/embed/BhbUcnKQvQiwE" width="480" height="362" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/fail-lol-slide-BhbUcnKQvQiwE"></a></p>'
+                gif: '<img src="images/baby-slide.gif" alt="a toddler falls through a backyard slide">'
             },
             {
                 title: 'huskie slam',
                 intensity: 2,
-                gif: ' <iframe src="https://giphy.com/embed/F09NFq9b23Xpu" width="480" height="290" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/dog-fall-funny-gif-F09NFq9b23Xpu"></a></p>'
+                gif: '<img src="images/baby-huskies.gif" alt="a toddler gets knocked over by a running huskie">'
             },
             {
                 title: 'twerky mum',
                 intensity: 2,
-                gif: '<iframe src="https://giphy.com/embed/h1ojsprlDCgbS" width="301" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/dancing-lol-mom-h1ojsprlDCgbS"></a></p>'
+                gif: '<img src="images/twerking-mum.gif" alt="a twerking mother accidentally knocks over a toddler running behind her">'
             },
         ],
         embarrassing: [
             {
                 title: 'brain freeze',
                 intensity: 1,
-                gif: '<iframe src="https://giphy.com/embed/3uFIPLaVK6iFW" width="270" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/funniest-funniest8mandatorygifsoftheweek71317-3uFIPLaVK6iFW"></a></p>'
+                gif: '<img src="images/baby-brain-freeze.gif" alt="a toddler drinking a soft drink through a straw gets brain freeze">'
 
             },
             {
                 title: 'hoser',
                 intensity: 1,
-                gif: '<iframe src="https://giphy.com/embed/iwKvMdNQomKC4" width="480" height="320" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/afv-fail-babies-iwKvMdNQomKC4"></a></p>'
+                gif: '<img src="images/baby-hose.gif" alt="a toddler tries to drink from a hose but misses his mouth">'
             },
             {
                 title: 'snot baby',
                 intensity: 2,
-                gif: '<iframe src="https://giphy.com/embed/AxVvjIqj8aWBzF85jy" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/worldsfunniestfails-fails-funniest-worlds-AxVvjIqj8aWBzF85jy"></a></p>'
+                gif: '<img src="images/baby-snot.gif" alt="a baby blows snot bubbles on his face">'
             },
             {
                 title: 'spaghetti',
                 intensity: 2,
-                gif: '<iframe src="https://giphy.com/embed/xTk9ZP6AM0EKyQwqNW" width="480" height="382" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/afv-funny-fail-lol-xTk9ZP6AM0EKyQwqNW"></a></p>'
+                gif: '<img src="images/spaghetti-snot.gif" alt="a baby sneezes a piece of spaghetti through her nose">'
             }
 
         ]
@@ -54,45 +52,45 @@ const failures = {
             {
                 title: 'yoyo fail',
                 intensity: 1,
-                gif: '<iframe src="https://giphy.com/embed/KYXWGxC3gcCpq" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/fail-pain-yoyo-KYXWGxC3gcCpq"></a></p>'
+                gif: '<img src="images/yoyo.gif" alt="a preteen hits himself in the face with a yoyo">'
             },
             {
                 title: 'shameful display',
                 intensity: 1,
-                gif: '<iframe src="https://giphy.com/embed/NQL7Wuo2JSQSY" width="283" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/fail-fall-jump-NQL7Wuo2JSQSY"></a></p>'
+                gif: '<img src="images/display-fail.gif" alt="a main in a department store trips over a cordon and knocks over a display">'
             },
             {
                 title: 'watermelon juice',
                 intensity: 2,
-                gif: '<iframe src="https://giphy.com/embed/RkHYWBm3VnfX2" width="480" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/ouch-fails-watermelon-RkHYWBm3VnfX2"></a></p>'
+                gif: '<img src="images/watermelon.gif" alt="a woman participating in a competition tries to fire a watermelon from a giant slingshot and has it fire in her face">'
             },
             {
                 title: 'no pain no gain',
                 intensity: 2,
-                gif: '<iframe src="https://giphy.com/embed/DuWJ9i10UXtf2" width="480" height="321" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/fail-ouch-pain-DuWJ9i10UXtf2"></a></p>'
+                gif: '<img src="images/treadmill.gif" alt="a woman falls on a treadmill and is sent flying backwards">'
             }
         ],
         embarrassing: [
             {
                 title: 'bad posture',
                 intensity: 1,
-                gif: '<iframe src="https://giphy.com/embed/FewMZauWeGB0IpNpVO" width="384" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/reaction-mood-FewMZauWeGB0IpNpVO"></a></p>'
+                gif: '<img src="images/car-slip.gif" alt="a lady slouching in a car seat slides into the footwell and gets stuck">'
 
             },
             {
                 title: 'sit down',
                 intensity: 1,
-                gif: '<iframe src="https://giphy.com/embed/l1tmxuXJgtlaaEqwwo" width="479" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/fallontonight-lol-omg-l1tmxuXJgtlaaEqwwo"></a></p>'
+                gif: '<img src="images/chair-break.gif" alt="a man breaks a chair as he goes to sit down">'
             },
             {
                 title: 'beer explosion',
                 intensity: 2,
-                gif: '<iframe src="https://giphy.com/embed/ABoaCMjkoqmIg" width="270" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/ABoaCMjkoqmIg"></a></p>'
+                gif: '<img src="images/beer-explosion.gif" alt="a drunk man trying to use an ATM drops his beer, causing a beer geyser to blast him in his face">'
             },
             {
                 title: 'sweet moves',
                 intensity: 2,
-                gif: '<iframe src="https://giphy.com/embed/IYte12qWWgCt2" width="291" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/IYte12qWWgCt2"></a></p>'
+                gif: '<img src="images/dance-slip.gif" alt="a man dancing at a party slips and flails on a wet floor as he struggles to regain his balance">'
             }
         ]
     },
@@ -101,22 +99,22 @@ const failures = {
             {
                 title: 'gymnast face slam',
                 intensity: 1,
-                gif: '<iframe src="https://giphy.com/embed/LI7DRrJeN0dIk" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/gymnastics-pro-LI7DRrJeN0dIk"></a></p>'
+                gif: '<img src="images/gymnast.gif" alt="a gymnast flings herself in the air but misses the bar on her way down, faceplanting on the mat">'
             },
             {
                 title: 'soccer ball rocket',
                 intensity: 1,
-                gif: '<iframe src="https://giphy.com/embed/Uzuuzhqol8cA8" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/daytonflyers-fail-Uzuuzhqol8cA8"></a></p>'
+                gif: '<img src="images/soccerball.gif" alt="a soccer player gets hit in the head by a soccerball launched at her by a member of the opposing team">'
             },
             {
                 title: 'speeding train',
                 intensity: 2,
-                gif: '<iframe src="https://giphy.com/embed/SxXk5cYhCBq6c" width="480" height="393" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/cheezburger-fail-running-SxXk5cYhCBq6c"></a></p>'
+                gif: '<img src="images/sprint.gif" alt="a sprinter at a track meet knocks over a young athlete not paying attention as she crosses the track">'
             },
             {
                 title: 'pole vault',
                 intensity: 2,
-                gif: '<iframe src="https://giphy.com/embed/lQNZnqT9zSeaY" width="480" height="361" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/fail-pole-vault-lQNZnqT9zSeaY"></a></p>'
+                gif: '<img src="images/pole-vault.gif" alt="a pole-vaulter spears himself in the groin as he clears the bar">'
             }
 
         ],
@@ -124,22 +122,22 @@ const failures = {
             {
                 title: 'job opening',
                 intensity: 1,
-                gif: '<iframe src="https://giphy.com/embed/l0MYC5rnAHehkVKRq" width="480" height="260" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/nfl-l0MYC5rnAHehkVKRq"></a></p>'
+                gif: '<img src="images/missed-football.gif" alt="an NFL player misses a very easy pass">'
             },
             {
                 title: 'insult to injury',
                 intensity: 1,
-                gif: '<iframe src="https://giphy.com/embed/xYRvkBcJhbSr6" width="480" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/not-use-stretcher-xYRvkBcJhbSr6"></a></p>'
+                gif: '<img src="images/yoyo.gif" alt="a medic trying to pick up an injured soccer player on a stretcher falls on top of him">'
             },
             {
                 title: '0.5/10',
                 intensity: 2,
-                gif: '<iframe src="https://giphy.com/embed/dGqajH1xpsGcw" width="480" height="385" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/summer-fails-pool-fail-dGqajH1xpsGcw"></a></p>'
+                gif: '<img src="images/high-dive.gif" alt="a competitive diver completes an aerial somersault and then belly flops on the water">'
             },
             {
                 title: 'boomerang',
                 intensity: 2,
-                gif: '<iframe src="https://giphy.com/embed/5rxOiUZ4dq5Ww" width="480" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/fail-fall-falling-5rxOiUZ4dq5Ww"></a></p>'
+                gif: '<img src="images/pole-vault-boomerang.gif" alt="a pole vaulter fails to clear the bar but holds on to his pole as it bends and flings him back in the direction he came from">'
             }
 
         ]
@@ -149,44 +147,44 @@ const failures = {
             {
                 title: 'penguin slide',
                 intensity: 1,
-                gif: '<iframe src="https://giphy.com/embed/C9AuY1VOvurxm" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/C9AuY1VOvurxm"></a></p>'
+                gif: '<img src="images/penguin.gif" alt="a penguin slips and falls on the ice">'
             },
             {
                 title: 'boop',
                 intensity: 1,
-                gif: '<iframe src="https://giphy.com/embed/ELPtC7diADV2o" width="480" height="361" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/fail-manatee-ELPtC7diADV2o"></a></p>'
+                gif: '<img src="images/water-mammal.gif" alt="a manatee in an aquarium swims face first into an observation window">'
             },
             {
                 title: 'dolphin dab',
                 intensity: 2,
-                gif: '<iframe src="https://giphy.com/embed/fDkk1KwJKn160" width="480" height="328" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/funny-fail-lol-fDkk1KwJKn160"></a></p>'
+                gif: '<img src="images/dolphins.gif" alt="a dolphin swimming behind a boat leaps into the air only to have another dolphin leap up beneath it, smashing it in the belly with its rostrum">'
             },
             {
                 title: 'rag-dog',
                 intensity: 2,
-                gif: '<iframe src="https://giphy.com/embed/3o7Zez01HKXvaLXiHS" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/afv-funny-fail-lol-3o7Zez01HKXvaLXiHS"></a></p>'
+                gif: '<img src="images/dog-exercise.gif" alt="a dog leaps onto an exercise ball and is sent flying">'
             }
         ],
         embarrassing: [
             {
                 title: 'top-heavy',
                 intensity: 1,
-                gif: '<iframe src="https://giphy.com/embed/JBeLqejGK61wc" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/dog-puppy-eating-JBeLqejGK61wc"></a></p>'
+                gif: '<img src="images/top-heavy-puppy.gif" alt="a top heavy puppy feeding at a bowl falls head over heels into his food">'
             },
             {
                 title: 'pathetic',
                 intensity: 1,
-                gif: '<iframe src="https://giphy.com/embed/yVMoeZwY3swhi" width="480" height="288" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/cat-fail-yVMoeZwY3swhi"></a></p>'
+                gif: '<img src="images/cat-misses-dog.gif" alt="a cat tries to attack a dog but misses completely">'
             },
             {
                 title: "dog inna' water",
                 intensity: 2,
-                gif: '<iframe src="https://giphy.com/embed/QLUE7bBjOJxe0" width="384" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/something-smells-fishy-QLUE7bBjOJxe0"></a></p>'
+                gif: '<img src="images/dog-fish.gif" alt="a fish flopping around on a dock scares a dog and causes it to fall off the dock into the water">'
             },
             {
                 title: 'nice try, no banana',
                 intensity: 2,
-                gif: '<iframe src="https://giphy.com/embed/qqaBppAvhIkP6" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/fail-monkey-bnana-qqaBppAvhIkP6"></a></p>'
+                gif: '<img src="images/monkey-banana.gif" alt="a monkey on the hood of a car tries to eat a banana on the other side of the windshield">'
             }
         ]
     }
