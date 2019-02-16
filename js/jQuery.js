@@ -257,7 +257,7 @@ $(document).ready(function () {
             $('.gif-container').html(randomVid(failOpIntensity).gif);
         } else {
             displayGif();
-            $('.gif-container').html('<iframe src="https://giphy.com/embed/8OJdqYqN1Nii3UTD6l" width="100%" height="100%" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>');
+            $('.gif-container').html('<img src="images/feel-good.gif" alt="Bob Ross pets a baby deer">');
         }
     })
 });

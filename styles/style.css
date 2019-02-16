@@ -134,10 +134,11 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 
 h1 {
   font-family: 'Sigmar One', cursive;
-  font-size: 70px;
-  color: #ef476f;
+  font-size: 100px;
+  color: white;
   margin: 0;
-  text-align: center; }
+  text-align: center;
+  text-shadow: -1px 1px #fe4902,  -2px 2px #fe4902,  -3px 3px #fe4902, -4px 4px #fe4902, -5px 5px #fe4902, -6px 6px #fe4902, -7px 7px #fe4902,  -8px 8px #fe4902, -9px 9px #fe4902, -10px 10px #fe4902, -11px 11px #fe4902; }
 
 p {
   font-family: 'Lato', sans-serif;
@@ -149,6 +150,73 @@ p {
   height: 100vh;
   padding: 100px 60px;
   background: #ffd166; }
+
+.banner-grid {
+  width: 100vw;
+  height: 50vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% 25% 25% 25%;
+  grid-template-columns: 25% 25% 25% 25%;
+  border-bottom: 10px solid #c200fb; }
+  .banner-grid .one {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    background-image: url(../images/ice.gif);
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .banner-grid .two {
+    -ms-grid-column: 2;
+    grid-column: 2;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    background-image: url(../images/skateboard.gif);
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .banner-grid .three {
+    -ms-grid-column: 3;
+    grid-column: 3;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    background-image: url(../images/karate-fail.gif);
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .banner-grid .four {
+    -ms-grid-column: 4;
+    grid-column: 4;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    background-image: url(../images/basketball.gif);
+    background-repeat: no-repeat;
+    background-size: cover; }
+
+.banner-overlay {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1/ span 4;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.8);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.img-container img {
+  display: block;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+  padding: 0;
+  margin: 0; }
 
 .quiz-container {
   width: 800px;

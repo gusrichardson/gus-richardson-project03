@@ -7,7 +7,77 @@
     background:#ffd166;
 }
 
+.banner-grid {
+    width: 100vw;
+    height: 50vh;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    border-bottom: 10px solid #c200fb;
+    // grid-template-rows: 25% 25%;
+    .one {
+        grid-column: 1;
+        grid-row: 1;
+        background-image: url(../images/ice.gif);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .two {
+        grid-column: 2;
+        grid-row: 1;
+        background-image: url(../images/skateboard.gif);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .three {
+        grid-column: 3;
+        grid-row: 1;
+        background-image: url(../images/karate-fail.gif);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .four {
+        grid-column: 4;
+        grid-row: 1;
+        background-image: url(../images/basketball.gif);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    // .five {
+    //     grid-column: 1;
+    //     grid-row: 2;
+    // }
+    // .six {
+    //     grid-column: 2;
+    //     grid-row: 2;
+    // }
+    // .seven {
+    //     grid-column: 3;
+    //     grid-row: 2;
+    // }
+    // .eight {
+    //     grid-column: 4;
+    //     grid-row: 2;
+    //     justify-self: stretch;
+    // }
+}
 
+.banner-overlay {
+    grid-column: 1/ span 4;
+    grid-row: 1;
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-container img {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
 
 .quiz-container {
     width: 800px;
