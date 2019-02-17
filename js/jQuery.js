@@ -198,6 +198,13 @@ $(document).ready(function () {
         function () { $(this).removeClass('bounce') }
     )
 
+    const arrowScroll = $('.down-arrow').on('click', function () {
+        $('html, body').animate({
+            scrollTop: $('#quiz-container').offset().top
+        }, 1000);
+    });
+
+
     $('input[name=painful-embarrassing').on('click', function () {
         $('.second-question').css({
             "display": "block",

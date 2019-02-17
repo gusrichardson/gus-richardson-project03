@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <div class="banner-grid">
+    <header class="banner-grid">
         <div class="img-container one">
         </div>
         <div class="img-container two">
@@ -46,33 +46,20 @@
                 <h1 class="animated slideInRight">Generator</h1>
             </div>
             <div class="arrow-container">
-                <i class="fas fa-arrow-alt-circle-down down-arrow animated"></i>
+                <i class="fas fa-arrow-alt-circle-down down-arrow animated" id="arrow"></i>
             </div>
         </div>
-    </div>
+    </header>
 
 
     <div class="wrapper">
-        <!-- <div class="banner-grid">
-            <div class="img-container one">
-            </div>
-            <div class="img-container two">
-            </div>
-            <div class="img-container three">
-            </div>
-            <div class="img-container four">
-            </div>
-            <div class="banner-overlay">
-                <h1>Fail Generator</h1>
-            </div>
-        </div> -->
 
 
-        <div class="quiz-container">
+        <div class="quiz-container" id="quiz-container">
 
             <form action="">
                 <div class="opener">
-                    <p>Can I interest you in a Painful or an Embarrassing Failure?</p>
+                    <p>Painful or Embarrassing?<br> <span class="capitalize">You</span> decide!</p>
 
                     <label for="painful-failure">Painful</label>
                     <input type="radio" name="painful-embarrassing" id="painful-failure" value="painful">

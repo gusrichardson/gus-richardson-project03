@@ -136,11 +136,11 @@ h1 {
   font-family: 'Sigmar One', cursive;
   font-size: 160px;
   line-height: 160px;
-  color: #530096;
+  color: #ffeb2b;
   margin: 0;
   padding: 0;
   text-align: center;
-  text-shadow: -1px 1px  #ffeb2b,  -2px 2px #ffeb2b,  -3px 3px #ffeb2b, -4px 4px #ffeb2b, -5px 5px #ffeb2b, -6px 6px #ffeb2b, -7px 7px #ffeb2b,  -8px 8px #ffeb2b, -9px 9px #ffeb2b, -10px 10px #ffeb2b, -11px 11px #ffeb2b, -12px 12px #ffeb2b, -13px 13px #ffeb2b, -14px 14px #ffeb2b,  -15px 15px #ffeb2b, -16px 16px #ffeb2b, -17px 17px #ffeb2b, -18px 18px #ffeb2b; }
+  text-shadow: -1px 1px  #530096,  -2px 2px #530096,  -3px 3px #530096, -4px 4px #530096, -5px 5px #530096, -6px 6px #530096, -7px 7px #530096,  -8px 8px #530096, -9px 9px #530096, -10px 10px #530096, -11px 11px #530096, -12px 12px #530096, -13px 13px #530096, -14px 14px #530096,  -15px 15px #530096, -16px 16px #530096, -17px 17px #530096, -18px 18px #530096; }
 
 p {
   font-family: 'Lato', sans-serif;
@@ -288,7 +288,7 @@ p {
   -ms-grid-row-span: 3;
   grid-row: 1/ span 3;
   z-index: 10;
-  background: rgba(248, 248, 255, 0.8);
+  background: rgba(83, 0, 150, 0.1);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -312,8 +312,8 @@ p {
   text-align: center; }
   .arrow-container i {
     font-size: 6rem;
-    color: #530096;
-    border: 10px solid #ffeb2b;
+    color: #ffeb2b;
+    border: 10px solid #530096;
     border-radius: 50%; }
 
 .quiz-container {

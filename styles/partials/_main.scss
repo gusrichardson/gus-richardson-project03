@@ -120,17 +120,15 @@
     }
 }
 
-
 .banner-overlay {
     grid-column: 1/ span 4;
     grid-row: 1/ span 3;
     z-index: 10;
-    background: rgba(248, 248, 255, 0.8);
+    // background: rgba(248, 248, 255, 0.1);
+    background: rgba(83,0,150,0.1);
     // background: rgba(22, 240, 247, 0.5);
     display: flex;
     flex-wrap: wrap;
-    // flex-direction: column;
-    // align-items: center;
     justify-content: center;
     padding-top: 80px;
 }
@@ -148,10 +146,10 @@
     text-align: center;
     i {
         font-size: 6rem;
-        // color:  #ffeb2b;
-        // border: 10px solid #530096;
-        color: #530096;
-        border: 10px solid #ffeb2b;
+        color:  #ffeb2b;
+        border: 10px solid #530096;
+        // color: #530096;
+        // border: 10px solid #ffeb2b;
         border-radius: 50%;
 
     }
