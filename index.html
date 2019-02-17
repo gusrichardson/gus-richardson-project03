@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>FAIL GENERATOR</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato:700i|Sigmar+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:700|Sigmar+One" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
@@ -54,22 +54,25 @@
 
     <div class="wrapper">
 
-
         <div class="quiz-container" id="quiz-container">
 
             <form action="">
                 <div class="opener">
                     <p>Painful or Embarrassing?<br> <span class="capitalize">You</span> decide!</p>
 
+                    <!-- <i class="fas fa-user-injured" id="injured"></i> -->
+                    <!-- <img src="images/leg-cast.png" id="injured" alt="leg cast"> -->
                     <label for="painful-failure">Painful</label>
                     <input type="radio" name="painful-embarrassing" id="painful-failure" value="painful">
 
                     <label for="embarrassing-failure">Embarassing</label>
                     <input type="radio" name="painful-embarrassing" id="embarrassing-failure" value="embarrassing">
+                    <!-- <i class="fas fa-flushed" id="embarrassed"></i> -->
+                    <!-- <img src="images/new-coke.png" id="embarrassed" alt="can of New Coke"> -->
                 </div>
 
                 <div class="second-question">
-                    <p>which category of (embarrassing) (painful) category would you most prefer?</p>
+                    <p id="second-question-text"></p>
 
                     <label for="babies">Baby Fails</label>
                     <input type="radio" id="babies" name="category" value="babies">
@@ -85,29 +88,33 @@
                 </div>
 
                 <div class="third-question">
-                    <p>How (painful) (embarrassing) do you prefer your fail to be?</p>
+                    <p id="third-question-text"></p>
 
                     <label for="intensity">How intense?</label>
                     <input type="range" id="intensity" name="intensity" min="1" max="2">
+                    <input type="button" id="intensity-button" value="Intensity Submit">
 
                 </div>
 
                 <div class="fourth-question">
 
                     <p>Are you sure?</p>
-                    <label for="proceed">Yes, proceed with failure</label>
+                    <label for="proceed">Yes! Fail me now!</label>
                     <input type="radio" id="proceed" name="to-continue" value="proceed">
 
-                    <label for="do-not-proceed">No, give me something happy</label>
+                    <label for="do-not-proceed">No! Give me something happy!</label>
                     <input type="radio" id="do-not-proceed" name="to-continue" value="do-not-proceed">
-
-                    <input type="submit" id="submit-button">
+                    <br>
+                    <input type="submit" id="submit-button" value="Submit!">
                 </div>
             </form>
 
             <div class="answer">
                 <div class="gif-container">
-
+                    <img src="images/static-screen.gif" alt="a static TV screen">
+                </div>
+                <div class="tv-name">
+                    <h2>Fail Generator</h2>
                 </div>
             </div>
         </div>

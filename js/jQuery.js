@@ -127,7 +127,7 @@ const failures = {
             {
                 title: 'insult to injury',
                 intensity: 1,
-                gif: '<img src="images/yoyo.gif" alt="a medic trying to pick up an injured soccer player on a stretcher falls on top of him">'
+                gif: '<img src="images/stretcher.gif" alt="a medic trying to pick up an injured soccer player on a stretcher falls on top of him">'
             },
             {
                 title: '0.5/10',
@@ -204,26 +204,30 @@ $(document).ready(function () {
         }, 1000);
     });
 
-
     $('input[name=painful-embarrassing').on('click', function () {
+        const genre = $('input[name=painful-embarrassing]:checked').val();
         $('.second-question').css({
             "display": "block",
         });
-    })
+        $('#second-question-text').html(`What kind of ${genre} fail?`);
+    });
 
     $('input[name=category]').on('click', function () {
+        const genre = $('input[name=painful-embarrassing]:checked').val();
         $('.third-question').css({
             "display": "block",
         })
-        $('.fourth-question').css({
-            "display": "block",
-        })
+        $('#third-question-text').html(`How intensely ${genre} can you handle?`);
     })
 
-    const displayGif = function () {
-        $('.gif-container').css({
+    $('#intensity-button').click(function (e) {
+        e.preventDefault;
+        $('.fourth-question').css({
             "display": "block",
-        })
+        });
+    });
+
+    const displayGif = function () {
         $('.wrapper').css({
             "height": "auto",
         })
@@ -265,11 +269,18 @@ $(document).ready(function () {
         }
         if (proceed === 'proceed') {
             // console.log(failOpIntensity);
-            displayGif();
-            $('.gif-container').html(randomVid(failOpIntensity).gif);
+            // displayGif();
+            $('.answer').addClass('animated shake');
+            setTimeout(function () {
+                $('.gif-container').html(randomVid(failOpIntensity).gif)
+            }, 1000);
         } else {
-            displayGif();
-            $('.gif-container').html('<img src="images/feel-good.gif" alt="Bob Ross pets a baby deer">');
+            // displayGif();
+            $('.answer').addClass('animated shake');
+            setTimeout(function () {
+                $('.gif-container').html('<img src="images/feel-good.gif" alt="Bob Ross pets a baby deer">')
+            }, 1000);
+            // $('.gif-container').html('<img src="images/feel-good.gif" alt="Bob Ross pets a baby deer">');
         }
     })
 });

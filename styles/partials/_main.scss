@@ -1,173 +1,95 @@
+// *, input {
+//     cursor: url(../new-coke-angled.png), auto;
+// }
 
 
 .wrapper {
-    width: 100%;
-    height: 100vh;
-    padding: 100px 60px;
-    background:#ffd166;
-}
-
-.banner-grid {
     width: 100vw;
-    max-width: 100vw;
     height: 100vh;
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    border-bottom: 10px solid #c200fb;
-    grid-template-rows: 33.33% 33.33% 33.34;
-    .one {
-        grid-column: 1;
-        grid-row: 1;
-        background-image: url(../images/ice.gif);
-        background-repeat: no-repeat;
-        background-size: cover;
-        max-width: 100%;
-    }
-    .two {
-        grid-column: 2;
-        grid-row: 1;
-        background-image: url(../images/skateboard.gif);
-        background-repeat: no-repeat;
-        background-size: cover;
-        max-width: 100%;
-    }
-    .three {
-        grid-column: 3;
-        grid-row: 1;
-        background-image: url(../images/karate-fail.gif);
-        background-repeat: no-repeat;
-        background-size: cover;
-        max-width: 100%;
-    }
-    .four {
-        grid-column: 4;
-        grid-row: 1;
-        max-width: 100%;
-        background-image: url(../images/basketball.gif);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .five {
-        grid-column: 1;
-        grid-row: 2;
-        background-image: url(../images/sinkhole.gif);
-        background-repeat: no-repeat;
-        background-size: cover;
-        max-width: 100%;
-    }
-    .six {
-        grid-column: 2;
-        grid-row: 2;
-        max-width: 100%;
-        background-image: url(../images/baby-fork.gif);
-        background-repeat: no-repeat;
-        background-size: cover;
-        max-width: 100%;
-    }
-    .seven {
-        grid-column: 3;
-        grid-row: 2;
-        max-width: 100%;
-        background-image: url(../images/toilet.gif);
-        background-repeat: no-repeat;
-        background-size: cover;
-        max-width: 100%;
-    }
-    .eight {
-        grid-column: 4;
-        grid-row: 2;
-        max-width: 100%;
-        background-image: url(../images/walmart.gif);
-        background-repeat: no-repeat;
-        background-size: cover;
-        max-width: 100%;
-    }
-    .nine {
-        grid-column: 1;
-        grid-row: 3;
-        max-height: 100%;
-        background-image: url(../images/gas.gif);
-        background-repeat: no-repeat;
-        background-size: cover;
-        max-width: 100%;
-    }
-    .ten {
-        grid-column: 2;
-        grid-row: 3;
-        max-height: 100%;
-        background-image: url(../images/granny.gif);
-        background-repeat: no-repeat;
-        background-size: cover;
-        max-width: 100%;
-    }
-    .eleven {
-        grid-column: 3;
-        grid-row: 3;
-        max-height: 100%;
-        background-image: url(../images/garbage-truck.gif);
-        background-repeat: no-repeat;
-        background-size: cover;
-        max-width: 100%;
-    }
-    .twelve {
-        grid-column: 4;
-        grid-row: 3;
-        max-height: 100%;
-        background-image: url(../images/ninja.gif);
-        background-repeat: no-repeat;
-        background-size: cover;
-        max-width: 100%;
-    }
-}
-
-.banner-overlay {
-    grid-column: 1/ span 4;
-    grid-row: 1/ span 3;
-    z-index: 10;
-    // background: rgba(248, 248, 255, 0.1);
-    background: rgba(83,0,150,0.1);
-    // background: rgba(22, 240, 247, 0.5);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-top: 80px;
-}
-
-.img-container img {
-    display: block;
-    object-fit: cover;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-}
-
-.arrow-container {
-    width: 100%;
-    text-align: center;
-    i {
-        font-size: 6rem;
-        color:  #ffeb2b;
-        border: 10px solid #530096;
-        // color: #530096;
-        // border: 10px solid #ffeb2b;
-        border-radius: 50%;
-
-    }
+    padding: 60px;
+    background:  $turq;
+    // background:  #530096;
 }
 
 .quiz-container {
-    width: 800px;
+    // width: 800px;
+    width: 100%;
+    padding: 40px;
+    height: auto;
+    // height: 600px;
+    display: flex;
+    justify-content: space-around;
     margin: 0 auto;
+    border:8px solid $purp;
+    border-radius: 10px;
+    // background: white;
+    background: $yell;
+    text-align:left;
+}
+
+.capitalize {
+    text-transform: uppercase;
+}
+
+form {
+    width: 50%;
+}
+
+.answer {
+    width: 45%;
+    height: 420px;
+    border:8px solid $purp;
+    text-align: center;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    background: $orange;
+    border-radius: 10px;
+}
+
+.tv-name {
+    // margin-bottom: 10px;
+    // padding-bottom: 10px;
     // border: 2px solid red;
 }
 
 .gif-container {
-    width: 100%;
+    width: 80%;
+    height: 300px;
+    margin: 30px auto 0;
+    // margin: 0 auto;
     // border: 10px solid red;
     padding: 0;
     // visibility: hidden;
-    display: none;
-    background: #c200fb;
+    // display: none;
+    // background: #c200fb;
+    border:4px solid $purp;
+    border-radius: 10px;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+#injured, #embarrassed {
+    animation-name: rotate;
+    animation: rotate 4s linear infinite;
+    font-size: 3rem;
+    margin: 0 60px;
+    width: 80px;
+    height: 80px;
+}
+
+// #embarrassed {
+//     width: 60px;
+//     height: 60px;
+// }
+
+@keyframes rotate {
+    0% { transform: rotate(-15deg)};
+    50% { transform: rotate(15deg)};
+    100% { transform: rotate(-15deg)};
 }
 
 iframe {
@@ -178,6 +100,19 @@ iframe {
     display: block;
     margin-bottom: 0;
     // background-clip: border-box;
+}
+
+#submit-button, #intensity-button {
+    padding: 7px 20px;
+    background: $orange;
+    color: $purp;
+    border: 4px solid $purp;
+    border-radius: 5px;
+    font-family: 'Lato', sans-serif;
+}
+
+#submit-button {
+    margin-top: 20px;
 }
 
 .second-question, .third-question, .fourth-question {

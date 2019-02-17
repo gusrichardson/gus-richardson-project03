@@ -29,25 +29,47 @@ h1 {
     -2px 2px #530096, 
     -3px 3px #530096,
     -4px 4px #530096,
-    -5px 5px #530096,
+    -5px 5px #ffeb2b,
     -6px 6px #530096,
     -7px 7px #530096, 
     -8px 8px #530096,
-    -9px 9px #530096,
+    -9px 9px #ffeb2b,
     -10px 10px #530096,
     -11px 11px #530096,
     -12px 12px #530096,
-    -13px 13px #530096,
+    -13px 13px#ffeb2b,
     -14px 14px #530096, 
     -15px 15px #530096,
     -16px 16px #530096,
-    -17px 17px #530096,
+    -17px 17px#ffeb2b,
     -18px 18px #530096;
+}
+
+h2 {
+    font-family: 'Sigmar One', cursive;
+    color: #530096;
+    font-size: 35px;
+    margin: 5px 0 0 0;
 }
 
 p {
     font-family: 'Lato', sans-serif;
-    font-size: 20px;
-    color: #00334e;
+    font-size: 25px;
+    color: $purp;
+    // color: #00334e;
 }
+
+label {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    color: $orange;
+}
+
+
+// input[type=radio]{
+//     width: 100%;
+//     height: 1.3rem;
+// }
+
+
 
