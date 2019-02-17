@@ -1,0 +1,54 @@
+@media only screen and (max-width: 1230px) {
+    h1 {
+        font-size: 140px;
+        line-height: 140px;
+    }
+    .answer {
+        width: 40%;
+    }
+    form {
+        width: 55%;
+    }
+}
+
+@media only screen and (max-width: 1140px) {
+    .wrapper {
+        height: auto;
+    }
+    .quiz-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    form {
+        width: 80%;
+        text-align: center;
+    }
+    .answer {
+        margin-top: 40px;
+        width: 80%;
+        height: 500px;
+    }
+    .gif-container {
+        height: 360px;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    h1 {
+        font-size: 120px;
+        line-height: 120px;
+    }
+    .arrow-container i {
+        font-size: 5rem;
+    }
+}
+
+@media only screen and (max-width: 860px){
+    h1 {
+        font-size: 100px;
+        line-height: 100px;
+    }
+    .arrow-container i {
+        font-size: 4.5rem;
+    }
+}

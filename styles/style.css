@@ -293,7 +293,6 @@ label {
   -ms-grid-row-span: 3;
   grid-row: 1/ span 3;
   z-index: 10;
-  background: rgba(83, 0, 150, 0.1);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -302,7 +301,8 @@ label {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding-top: 80px; }
+  padding-top: 80px;
+  background: rgba(22, 240, 247, 0.9); }
 
 .img-container img {
   display: block;
@@ -425,3 +425,47 @@ iframe {
 
 .answer {
   margin-top: 20px; }
+
+@media only screen and (max-width: 1230px) {
+  h1 {
+    font-size: 140px;
+    line-height: 140px; }
+  .answer {
+    width: 40%; }
+  form {
+    width: 55%; } }
+
+@media only screen and (max-width: 1140px) {
+  .wrapper {
+    height: auto; }
+  .quiz-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  form {
+    width: 80%;
+    text-align: center; }
+  .answer {
+    margin-top: 40px;
+    width: 80%;
+    height: 500px; }
+  .gif-container {
+    height: 360px; } }
+
+@media only screen and (max-width: 1000px) {
+  h1 {
+    font-size: 120px;
+    line-height: 120px; }
+  .arrow-container i {
+    font-size: 5rem; } }
+
+@media only screen and (max-width: 860px) {
+  h1 {
+    font-size: 100px;
+    line-height: 100px; }
+  .arrow-container i {
+    font-size: 4.5rem; } }

@@ -270,6 +270,7 @@ $(document).ready(function () {
         if (proceed === 'proceed') {
             // console.log(failOpIntensity);
             // displayGif();
+            document.getElementById('rattle').play();
             $('.answer').addClass('animated shake');
             setTimeout(function () {
                 $('.gif-container').html(randomVid(failOpIntensity).gif)
