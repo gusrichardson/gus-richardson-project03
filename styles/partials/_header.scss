@@ -304,6 +304,7 @@
 
 .arrow-container {
     width: 100%;
+    // border: 1px solid red;
     text-align: center;
     i {
         font-size: 6rem;
@@ -314,5 +315,13 @@
         border-radius: 50%;
 
     }
+}
+
+.arrow-container img:hover {
+    cursor: pointer;
+}
+
+.mobile {
+    display: none;
 }
 

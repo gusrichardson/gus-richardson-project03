@@ -321,6 +321,12 @@ label {
     border: 10px solid #530096;
     border-radius: 50%; }
 
+.arrow-container img:hover {
+  cursor: pointer; }
+
+.mobile {
+  display: none; }
+
 .wrapper {
   width: 100vw;
   height: 100vh;
@@ -465,7 +471,57 @@ iframe {
 
 @media only screen and (max-width: 860px) {
   h1 {
-    font-size: 100px;
+    font-size: 110px;
+    line-height: 130px; }
+  .title {
+    display: none; }
+  .mobile {
+    display: block; }
+    .mobile span {
+      display: block; }
+  .answer, form {
+    width: 90%; } }
+
+@media only screen and (max-width: 620px) {
+  .wrapper {
+    padding: 30px; }
+  form {
+    width: 100%; }
+  .answer {
+    width: 100%;
+    height: 460px; }
+    .answer .gif-container {
+      height: 320px; }
+  h2 {
+    font-size: 30px;
+    margin-top: 10px; } }
+
+@media only screen and (max-width: 520px) {
+  .quiz-container {
+    padding: 20px; }
+  h1 {
+    font-size: 80px;
     line-height: 100px; }
-  .arrow-container i {
-    font-size: 4.5rem; } }
+  .answer {
+    height: 400px; }
+    .answer .gif-container {
+      height: 280px; } }
+
+@media only screen and (max-width: 440px) {
+  h2 {
+    font-size: 24px; }
+  .answer {
+    height: 360px; }
+    .answer .gif-container {
+      height: 240px; } }
+
+@media only screen and (max-width: 380px) {
+  h1 {
+    font-size: 70px;
+    line-height: 90px; }
+  .answer {
+    height: 320px; }
+    .answer .gif-container {
+      height: 200px; }
+  h2 {
+    font-size: 20px; } }

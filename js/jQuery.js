@@ -194,7 +194,7 @@ const failures = {
 $(document).ready(function () {
 
     const arrowBounce = $('.down-arrow').hover(
-        function () { $(this).addClass('bounce') },
+        function () { $(this).removeClass('fadeIn delay-1s').addClass('bounce') },
         function () { $(this).removeClass('bounce') }
     )
 
