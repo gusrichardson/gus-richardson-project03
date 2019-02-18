@@ -158,6 +158,12 @@ label {
   font-size: 20px;
   color: #ff6936; }
 
+h3 {
+  font-family: 'Pacifico', cursive;
+  font-size: 80px;
+  line-height: 100px;
+  margin: 40px; }
+
 .banner {
   width: 100vw;
   height: 100vh;
@@ -227,6 +233,12 @@ label {
   padding: 60px;
   background: #16f0f7; }
 
+form {
+  border: 1px solid red; }
+
+.mobile {
+  display: none; }
+
 .quiz-container {
   width: 100%;
   padding: 40px;
@@ -249,6 +261,7 @@ form {
   width: 50%; }
 
 .answer {
+  margin-top: 20px;
   width: 45%;
   height: 420px;
   border: 8px solid #530096;
@@ -342,23 +355,44 @@ iframe {
 .second-question, .third-question, .fourth-question {
   display: none; }
 
-.answer {
-  margin-top: 20px; }
-
 .start-over-container {
-  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: #ffeb2b;
+  top: 0;
   text-align: center;
+  padding-top: 20px;
   display: none;
-  position: relative; }
-  .start-over-container img {
-    width: 100px;
-    position: absolute;
-    bottom: 130px;
-    left: 10%; }
-  .start-over-container label {
-    position: absolute;
-    bottom: 100px;
-    left: 10%; }
+  border: 1px solid red; }
+  .start-over-container h3 {
+    -webkit-transform: rotate(-15deg);
+    -ms-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+    color: #530096; }
+  .start-over-container #start-over {
+    height: 200px; }
+  .start-over-container #start-over-label {
+    display: block; }
+  .start-over-container .thanks-container {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-column: 1/ span 4;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    grid-row: 1/ span 3;
+    border: 4px solid pink; }
+  .start-over-container .refresh-container {
+    -ms-grid-column: 4;
+    grid-column: 4;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 4;
+    grid-row: 1/ span 4;
+    border: 2px solid blue;
+    text-align: right;
+    padding-top: 80px; }
+    .start-over-container .refresh-container label {
+      border: 2px solid green; }
   .start-over-container img:hover, .start-over-container label:hover {
     cursor: pointer; }
 
@@ -373,7 +407,8 @@ iframe {
 
 @media only screen and (max-width: 1140px) {
   .wrapper {
-    height: auto; }
+    height: auto;
+    padding-bottom: 40px; }
   .quiz-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -381,7 +416,8 @@ iframe {
     flex-direction: column;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center; }
+    align-items: center;
+    margin-bottom: 40px; }
   form {
     width: 80%;
     text-align: center; }
