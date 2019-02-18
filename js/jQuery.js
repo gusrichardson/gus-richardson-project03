@@ -284,25 +284,10 @@ const questionOne = $('input[name=painful-embarrassing').on('click', function ()
         }
     });
 
-    // $('#intensity-button').click(function (e) {
-    //     e.preventDefault;
-    //     $('.fourth-question').css({
-    //         "display": "block",
-    //     });
-    // });
-
-    const displayGif = function () {
-        $('.wrapper').css({
-            "height": "auto",
-        })
-    }
-
     const randomVid = function (optionsArray) {
         const index = Math.floor(Math.random() * optionsArray.length);
         return optionsArray[index];
     }
-
-    console.log(randomVid(failures.babies.embarrassing), 'this is another');
 
     $('form').on('submit', function (e) {
         e.preventDefault();
@@ -311,7 +296,6 @@ const questionOne = $('input[name=painful-embarrassing').on('click', function ()
         const demographic = $('input[name=category]:checked').val();
         //painful or embarrassing
         const genre = $('input[name=painful-embarrassing]:checked').val();
-        // console.log(genre);
         const intensity = parseInt($('input[name=intensity').val());
         const proceed = $('input[name=to-continue]:checked').val();
 
@@ -328,13 +312,11 @@ const questionOne = $('input[name=painful-embarrassing').on('click', function ()
             if (currentItem.intensity === intensity) {
                 failOpIntensity.push(currentItem);
                 randomVid(failOpIntensity);
-                console.log(randomVid(failOpIntensity), "this it the console");
             };
         }
-        // if ($(window).scrollTop() > navpos.top && $(window).width() < 960)
+
         if (proceed === 'proceed' && $(window).width() < 1140) {
             $('.quiz-container').css({
-                // "height": "80vh",
                 "padding": "10px 20px",
                 "flex-direction": "column-reverse",
             });
@@ -352,7 +334,6 @@ const questionOne = $('input[name=painful-embarrassing').on('click', function ()
             }, 1000);
         } else if (proceed === 'do-not-proceed' && $(window).width() < 1140) {
             $('.quiz-container').css({
-                // "height": "80vh",
                 "padding": "10px 20px",
                 "flex-direction": "column-reverse",
             });

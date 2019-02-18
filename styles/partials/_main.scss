@@ -1,36 +1,25 @@
-// *, input {
-//     cursor: url(../new-coke-angled.png), auto;
-// }
-
 
 .wrapper {
     width: 100vw;
     height: 100vh;
     padding: 60px;
     background:  $turq;
-    // background:  #530096;
 }
 
-form {
-    border: 1px solid red;
-}
 
 .mobile {
     display: none;
 }
 
 .quiz-container {
-    // width: 800px;
     width: 100%;
     padding: 40px;
     height: auto;
-    // height: 600px;
     display: flex;
     justify-content: space-around;
     margin: 0 auto;
     border:8px solid $purp;
     border-radius: 10px;
-    // background: white;
     background: $yell;
     text-align:left;
 }
@@ -61,12 +50,7 @@ form {
     width: 80%;
     height: 300px;
     margin: 30px auto 0;
-    // margin: 0 auto;
-    // border: 10px solid red;
     padding: 0;
-    // visibility: hidden;
-    // display: none;
-    // background: #c200fb;
     border:4px solid $purp;
     border-radius: 10px;
     img {
@@ -74,37 +58,6 @@ form {
         height: 100%;
         object-fit: cover;
     }
-}
-
-#injured, #embarrassed {
-    animation-name: rotate;
-    animation: rotate 4s linear infinite;
-    font-size: 3rem;
-    margin: 0 60px;
-    width: 80px;
-    height: 80px;
-}
-
-// #embarrassed {
-//     width: 60px;
-//     height: 60px;
-// }
-
-@keyframes rotate {
-    0% { transform: rotate(-15deg)};
-    50% { transform: rotate(15deg)};
-    100% { transform: rotate(-15deg)};
-}
-
-
-iframe {
-    min-width: 100%;
-    width: 100%;
-    min-height: 100%;
-    max-height: 100%;
-    display: block;
-    margin-bottom: 0;
-    // background-clip: border-box;
 }
 
 #submit-button, #intensity-button {
@@ -148,16 +101,7 @@ iframe {
     top: 0;
     text-align: center;
     padding-top: 20px;
-    // z-index: 20;
-    // margin: 0 auto;
-    // height: 60px;
-    // text-align: center;
     display: none;
-    border: 1px solid red;
-    // grid-template-columns: 25%, 25%, 25%, 25%;
-    // grid-template-rows: 25%, 25%, 25%, 25%;
-    // vertical-align: middle;
-    // position: relative;
     h3 {
         transform: rotate(-15deg);
         color: $purp;
@@ -168,56 +112,9 @@ iframe {
     #start-over-label {
         display: block;
     }
-    .thanks-container {
-        grid-column: 1/ span 4;
-        grid-row: 1/ span 3;
-        border: 4px solid pink;
-    }
-    .refresh-container {
-        grid-column: 4;
-        grid-row: 1/ span 4;
-        border: 2px solid blue;
-        text-align: right;
-        padding-top: 80px;
-        label {
-            border: 2px solid green;
-        }
-    }
-    // span {
-    //     display: block;
-    // }
     img:hover, label:hover {
         cursor: pointer;
     }
 }
 
-// #start-over {
-//     max-width: 40%;
-// }
 
-// .refresh-container {
-//     display: flex;
-//     flex-basis: column;
-//     text-align: center;
-//     width: 30%;
-//     height: 100%;
-//     border: 1px solid red;
-//     img {
-//        height: 200px;
-//     }
-//     label {
-//         align-self: bottom;
-//     }
-// }
-
-// .thanks-container {
-//    width: 70%;
-//    height: 100%;
-//    text-align: left;
-//    border: 1px solid red;
-//    h3 {
-//        margin-top: 50px;
-//        transform: rotate(-20deg);
-//        color: $purp;
-//    }
-// }
