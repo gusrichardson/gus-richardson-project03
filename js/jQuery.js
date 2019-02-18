@@ -205,10 +205,7 @@ $(document).ready(function () {
     });
 
     const restart = $('#submit-button').on('click', function () {
-        // $('.quiz-container').css({
-        //     "flex-direction": "row-reverse",
-        //     "justify-content": "space-between",
-        // });
+
         setTimeout(function () {
             $('.start-over-container').css({
                 "display": "block",
@@ -227,21 +224,6 @@ $(document).ready(function () {
                 });
         });
     });
-
-    // const restart = $('#submit-button').on('click', function () {
-    //     $('.start-over-container').css({
-    //         "display": "block",
-    //     });
-    //     $('.wrapper').css({
-    //         "height": "auto",
-    //     });
-    //     $('#start-over').hover(function () {
-    //         $(this).removeClass('fadeIn').addClass('bounce')
-    //     },
-    //         function () {
-    //             $(this).removeClass('bounce')
-    //         })
-    // });
 
     const refreshPage = $('.start-over').on('click', function () {
         location.reload(true);
@@ -311,23 +293,12 @@ $(document).ready(function () {
             };
         }
         // if ($(window).scrollTop() > navpos.top && $(window).width() < 960)
-        if (proceed === 'proceed' && $(window).width() < 1200) {
-            // console.log(failOpIntensity);
-            // displayGif();
-            // $('form').css({
-            //     "display": "none",
-            // });
+        if (proceed === 'proceed' && $(window).width() < 1140) {
             $('.quiz-container').css({
                 // "height": "80vh",
                 "padding": "10px 20px",
                 "flex-direction": "column-reverse",
-                "backgroun": "black",
             });
-            // $('.answer').css({
-            //     "margin-top": "0",
-            //     "width": "50%",
-            //     "height": "100%",
-            // });
             $('.wrapper').css({
                 "height": "100vh",
                 "padding-top": "10%",
@@ -337,13 +308,33 @@ $(document).ready(function () {
             setTimeout(function () {
                 $('.gif-container').html(randomVid(failOpIntensity).gif)
             }, 1000);
-        } else {
-            // displayGif();
+        } else if (proceed === 'do-not-proceed' && $(window).width() < 1140) {
+            $('.quiz-container').css({
+                // "height": "80vh",
+                "padding": "10px 20px",
+                "flex-direction": "column-reverse",
+            });
+            $('.wrapper').css({
+                "height": "100vh",
+                "padding-top": "10%",
+            });
+            document.getElementById('rattle').play();
             $('.answer').addClass('animated shake');
             setTimeout(function () {
                 $('.gif-container').html('<img src="images/feel-good.gif" alt="Bob Ross pets a baby deer">')
             }, 1000);
-            // $('.gif-container').html('<img src="images/feel-good.gif" alt="Bob Ross pets a baby deer">');
+        } else if (proceed === "proceed") {
+            document.getElementById('rattle').play();
+            $('.answer').addClass('animated shake');
+            setTimeout(function () {
+                $('.gif-container').html(randomVid(failOpIntensity).gif)
+            }, 1000);
+        } else {
+            document.getElementById('rattle').play();
+            $('.answer').addClass('animated shake');
+            setTimeout(function () {
+                $('.gif-container').html('<img src="images/feel-good.gif" alt="Bob Ross pets a baby deer">')
+            }, 1000);
         }
     })
 });
