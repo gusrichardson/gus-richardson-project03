@@ -9,7 +9,7 @@
     .one {
         grid-column: 1;
         grid-row: 1;
-        background-image: url(../images/ice.gif);
+        // background-image: url(../images/ice.gif);
         background-repeat: no-repeat;
         background-size: cover;
         max-width: 100%;
@@ -19,7 +19,7 @@
         grid-column: 2;
         grid-row: 1;
         // background:rgba(22, 240, 247, .9);
-        background-image: url(../images/skateboard.gif);
+        // background-image: url(../images/skateboard.gif);
         background-repeat: no-repeat;
         background-size: cover;
         max-width: 100%;
@@ -28,7 +28,7 @@
         grid-column: 3;
         grid-row: 1;
         // background:rgba(22, 240, 247, .9);
-        background-image: url(../images/karate-fail.gif);
+        // background-image: url(../images/karate-fail.gif);
         background-repeat: no-repeat;
         background-size: cover;
         max-width: 100%;
@@ -37,7 +37,7 @@
         grid-column: 4;
         grid-row: 1;
         max-width: 100%;
-        background-image: url(../images/basketball.gif);
+        // background-image: url(../images/basketball.gif);
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -45,7 +45,7 @@
         grid-column: 1;
         grid-row: 2;
         // background:rgba(22, 240, 247, .9);
-        background-image: url(../images/sinkhole.gif);
+        // background-image: url(../images/sinkhole.gif);
         background-repeat: no-repeat;
         background-size: cover;
         max-width: 100%;
@@ -55,7 +55,7 @@
         grid-row: 2;
         max-width: 100%;
         // background:rgba(22, 240, 247, .9);
-        background-image: url(../images/baby-fork.gif);
+        // background-image: url(../images/baby-fork.gif);
         background-repeat: no-repeat;
         background-size: cover;
         max-width: 100%;
@@ -65,7 +65,7 @@
         grid-row: 2;
         max-width: 100%;
         // background:rgba(22, 240, 247, .9);
-        background-image: url(../images/toilet.gif);
+        // background-image: url(../images/toilet.gif);
         background-repeat: no-repeat;
         background-size: cover;
         max-width: 100%;
@@ -75,7 +75,7 @@
         grid-row: 2;
         max-width: 100%;
         // background:rgba(22, 240, 247, .9);
-        background-image: url(../images/walmart.gif);
+        // background-image: url(../images/walmart.gif);
         background-repeat: no-repeat;
         background-size: cover;
         max-width: 100%;
@@ -84,7 +84,7 @@
         grid-column: 1;
         grid-row: 3;
         max-height: 100%;
-        background-image: url(../images/gas.gif);
+        // background-image: url(../images/gas.gif);
         background-repeat: no-repeat;
         background-size: cover;
         max-width: 100%;
@@ -94,7 +94,7 @@
         grid-row: 3;
         max-height: 100%;
         // background:rgba(22, 240, 247, .9);
-        background-image: url(../images/granny.gif);
+        // background-image: url(../images/granny.gif);
         background-repeat: no-repeat;
         background-size: cover;
         max-width: 100%;
@@ -104,7 +104,7 @@
         grid-row: 3;
         max-height: 100%;
         // background:rgba(22, 240, 247, .9);
-        background-image: url(../images/garbage-truck.gif);
+        // background-image: url(../images/garbage-truck.gif);
         background-repeat: no-repeat;
         background-size: cover;
         max-width: 100%;
@@ -113,12 +113,25 @@
         grid-column: 4;
         grid-row: 3;
         max-height: 100%;
-        background-image: url(../images/ninja.gif);
+        // background-image: url(../images/ninja.gif);
         background-repeat: no-repeat;
         background-size: cover;
         max-width: 100%;
     }
 }
+
+.animation-overlay{
+    grid-column: 1/ span 5;
+    grid-row: 1/ span 3;
+    z-index: 30;
+    border: 1px solid red;
+}
+
+
+
+// #cast {
+
+// }
 
 // .overlay-two {
 //     grid-column: 2;
@@ -172,7 +185,8 @@
     flex-wrap: wrap;
     justify-content: center;
     padding-top: 80px;
-    background: rgba(22,240,247,0.9);
+    background: rgba(22,240,247,1);
+    position: relative;
     // background: $turq;
     // display: grid;
     // grid-template-columns: 25% 25% 25% 25%;
@@ -324,4 +338,71 @@
 .mobile {
     display: none;
 }
+
+
+// #cast {
+//     animation-name: legcast;
+//     -webkit-animation: legcast 10s linear infinite;
+//     animation-direction: alternate;
+//     width: 80px;
+//     height: 100px;
+//     position: absolute;
+// }
+
+// @keyframes legcast {
+//     0% {
+//         top:100%;
+//         left:0;
+//       }
+//       100% {
+//         top:0;
+//         left:100%;
+//      }
+// }
+
+#cast{
+    width: 200px;
+    height: 500px;
+    position: relative;
+    animation: floatBubble 2s inifnate;
+    animation-directon: normal;
+    }
+    
+    
+    @keyframes floatBubble{
+     0% {
+            top:0;
+            -webkit-animation-timing-function: ease-in;
+    
+       }
+    
+    
+       100% {
+          top: 500px;
+          animation-timing-function: ease-out;
+       }
+    
+    }
+
+// #cast {
+//     /* Set up the normal state */
+//     // color:yellow;
+//     // font-size:50px;
+//     // font-weight: bold;
+//     position: absolute;
+//     -webkit-transform:rotate(20deg);
+//     /* apply the animation */
+//     -webkit-animation:legcast 3s linear infinite;
+//   }
+
+//   @-webkit-keyframes legcast {
+//     0% {
+//       bottom:100%;
+//       left:0;
+//     }
+//     100% {
+//       bottom:0;
+//       left:100%;
+//     }
+//   }
 

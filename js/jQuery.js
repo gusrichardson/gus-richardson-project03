@@ -204,6 +204,25 @@ $(document).ready(function () {
         }, 1000);
     });
 
+    const restart = $('#submit-button').on('click', function () {
+        $('.start-over-container').css({
+            "display": "block",
+        });
+        $('.wrapper').css({
+            "height": "auto",
+        });
+        $('#start-over').hover(function () {
+            $(this).removeClass('fadeIn').addClass('bounce')
+        },
+            function () {
+                $(this).removeClass('bounce')
+            })
+    });
+
+    const refreshPage = $('.start-over').on('click', function () {
+        location.reload(true);
+    });
+
     $('input[name=painful-embarrassing').on('click', function () {
         const genre = $('input[name=painful-embarrassing]:checked').val();
         $('.second-question').css({
