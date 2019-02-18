@@ -310,7 +310,8 @@ $(document).ready(function () {
                 console.log(randomVid(failOpIntensity), "this it the console");
             };
         }
-        if (proceed === 'proceed') {
+        // if ($(window).scrollTop() > navpos.top && $(window).width() < 960)
+        if (proceed === 'proceed' && $(window).width() < 1200) {
             // console.log(failOpIntensity);
             // displayGif();
             // $('form').css({
@@ -319,6 +320,8 @@ $(document).ready(function () {
             $('.quiz-container').css({
                 // "height": "80vh",
                 "padding": "10px 20px",
+                "flex-direction": "column-reverse",
+                "backgroun": "black",
             });
             // $('.answer').css({
             //     "margin-top": "0",
