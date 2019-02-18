@@ -203,54 +203,93 @@ $(document).ready(function () {
             scrollTop: $('#quiz-container').offset().top
         }, 1000);
     });
+});
 
-    const restart = $('#submit-button').on('click', function () {
+const restart = $('#submit-button').on('click', function () {
 
-        setTimeout(function () {
-            $('.start-over-container').css({
-                "display": "block",
-            }, 3000);
-            $('.wrapper').css({
-                "height": "auto",
-            });
-            $('form').css({
-                "position": "relative",
-            })
-            $('#start-over').hover(function () {
-                $(this).removeClass('fadeIn').addClass('bounce')
-            },
-                function () {
-                    $(this).removeClass('bounce')
-                });
+    setTimeout(function () {
+        $('.start-over-container').css({
+            "display": "block",
+        }, 3000);
+        $('.wrapper').css({
+            "height": "auto",
         });
+        $('form').css({
+            "position": "relative",
+        })
+        $('#start-over').hover(function () {
+            $(this).removeClass('fadeIn').addClass('bounce')
+        },
+            function () {
+                $(this).removeClass('bounce')
+            });
     });
+});
 
-    const refreshPage = $('.start-over').on('click', function () {
-        location.reload(true);
-    });
+const refreshPage = $('.start-over').on('click', function () {
+    location.reload(true);
+});
 
-    $('input[name=painful-embarrassing').on('click', function () {
+const questionOne = $('input[name=painful-embarrassing').on('click', function () {
+    if ($(window).width() < 1140) {
+        const genre = $('input[name=painful-embarrassing]:checked').val();
+        $('.second-question').css({
+            "display": "block",
+        });
+        $('html, body').animate({
+            scrollTop: $('#second-question').offset().top
+        }, 1000);
+        $('#second-question-text').html(`What kind of ${genre} fail?`);
+    } else {
         const genre = $('input[name=painful-embarrassing]:checked').val();
         $('.second-question').css({
             "display": "block",
         });
         $('#second-question-text').html(`What kind of ${genre} fail?`);
+    };
+
+
+    const questionTwo = $('input[name=category]').on('click', function () {
+        if ($(window).width() < 1140) {
+            const genre = $('input[name=painful-embarrassing]:checked').val();
+            $('.third-question').css({
+                "display": "block",
+            });
+            $('html, body').animate({
+                scrollTop: $('#third-question').offset().top
+            }, 1000);
+            $('#third-question-text').html(`How intensely ${genre} can you handle?`);
+        } else {
+            const genre = $('input[name=painful-embarrassing]:checked').val();
+            $('.third-question').css({
+                "display": "block",
+            });
+            $('#third-question-text').html(`How intensely ${genre} can you handle?`);
+        }
     });
 
-    $('input[name=category]').on('click', function () {
-        const genre = $('input[name=painful-embarrassing]:checked').val();
-        $('.third-question').css({
-            "display": "block",
-        })
-        $('#third-question-text').html(`How intensely ${genre} can you handle?`);
-    })
-
-    $('#intensity-button').click(function (e) {
+    const questionThree = $('#intensity-button').click(function (e) {
         e.preventDefault;
-        $('.fourth-question').css({
-            "display": "block",
-        });
+        if ($(window).width() < 1140) {
+            $('.fourth-question').css({
+                "display": "block",
+            });
+            $('html, body').animate({
+                scrollTop: $('#fourth-question').offset().top
+            }, 1000);
+        } else {
+            $('.fourth-question').css({
+                "display": "block",
+            });
+        }
     });
+
+    // $('#intensity-button').click(function (e) {
+    //     e.preventDefault;
+    //     $('.fourth-question').css({
+    //         "display": "block",
+    //     });
+    // });
 
     const displayGif = function () {
         $('.wrapper').css({
@@ -303,6 +342,9 @@ $(document).ready(function () {
                 "height": "100vh",
                 "padding-top": "10%",
             });
+            $('html, body').animate({
+                scrollTop: $('.answer').offset().top
+            }, 0);
             document.getElementById('rattle').play();
             $('.answer').addClass('animated shake');
             setTimeout(function () {
@@ -318,6 +360,9 @@ $(document).ready(function () {
                 "height": "100vh",
                 "padding-top": "10%",
             });
+            $('html, body').animate({
+                scrollTop: $('#quiz-container').offset().top
+            }, 0);
             document.getElementById('rattle').play();
             $('.answer').addClass('animated shake');
             setTimeout(function () {

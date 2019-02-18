@@ -105,6 +105,11 @@
         }
     }
 
+    h3 {
+        font-size: 60px;
+        line-height: 80px;
+    }
+
 }
 
 @media only screen and (max-width: 440px){
@@ -116,6 +121,10 @@
         .gif-container {
             height: 240px;
         }
+    }
+    h3 {
+        font-size: 50px;
+        line-height: 65px;
     }
 
 }
@@ -133,6 +142,10 @@
     }
     h2 {
         font-size: 20px;
+    }
+    h3 {
+        font-size: 40px;
+        line-height: 50px;
     }
 }
 

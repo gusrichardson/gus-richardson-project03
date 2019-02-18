@@ -471,7 +471,10 @@ iframe {
   .answer {
     height: 400px; }
     .answer .gif-container {
-      height: 280px; } }
+      height: 280px; }
+  h3 {
+    font-size: 60px;
+    line-height: 80px; } }
 
 @media only screen and (max-width: 440px) {
   h2 {
@@ -479,7 +482,10 @@ iframe {
   .answer {
     height: 360px; }
     .answer .gif-container {
-      height: 240px; } }
+      height: 240px; }
+  h3 {
+    font-size: 50px;
+    line-height: 65px; } }
 
 @media only screen and (max-width: 380px) {
   h1 {
@@ -490,4 +496,7 @@ iframe {
     .answer .gif-container {
       height: 200px; }
   h2 {
-    font-size: 20px; } }
+    font-size: 20px; }
+  h3 {
+    font-size: 40px;
+    line-height: 50px; } }
