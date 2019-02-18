@@ -205,9 +205,11 @@ $(document).ready(function () {
     });
 
     const restart = $('#submit-button').on('click', function () {
-        $('.start-over-container').css({
-            "display": "block",
-        });
+        setTimeout(function () {
+            $('.start-over-container').css({
+                "display": "block",
+            })
+        }, 3000);
         $('.wrapper').css({
             "height": "auto",
         });
@@ -216,8 +218,23 @@ $(document).ready(function () {
         },
             function () {
                 $(this).removeClass('bounce')
-            })
+            });
     });
+
+    // const restart = $('#submit-button').on('click', function () {
+    //     $('.start-over-container').css({
+    //         "display": "block",
+    //     });
+    //     $('.wrapper').css({
+    //         "height": "auto",
+    //     });
+    //     $('#start-over').hover(function () {
+    //         $(this).removeClass('fadeIn').addClass('bounce')
+    //     },
+    //         function () {
+    //             $(this).removeClass('bounce')
+    //         })
+    // });
 
     const refreshPage = $('.start-over').on('click', function () {
         location.reload(true);
@@ -289,6 +306,21 @@ $(document).ready(function () {
         if (proceed === 'proceed') {
             // console.log(failOpIntensity);
             // displayGif();
+            $('form').css({
+                "display": "none",
+            });
+            $('.quiz-container').css({
+                // "height": "80vh",
+                "padding": "10px 20px",
+            });
+            $('.answer').css({
+                "margin-top": "0",
+                "width": "50%",
+                "height": "100%",
+            });
+            $('.wrapper').css({
+                "height": "100vh",
+            });
             document.getElementById('rattle').play();
             $('.answer').addClass('animated shake');
             setTimeout(function () {

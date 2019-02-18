@@ -141,45 +141,23 @@ iframe {
 
 .start-over-container {
     margin: 0 auto;
+    // height: 60px;
     text-align: center;
     display: none;
+    position: relative;
     img {
-        margin-top: 40px;
         width: 100px;
+        position: absolute;
+        bottom: 130px;
+        left: 10%;
     }
     label {
-        display: block;
+        // display: block;
+        position: absolute;
+        bottom: 100px;
+        left: 10%;
     }
     img:hover, label:hover {
         cursor: pointer;
     }
 }
-
-input[type=range]::-webkit-slider-runnable-track {
-    width: 100%;
-    height: 8.4px;
-    cursor: pointer;
-    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-    background: #3071a9;
-    border-radius: 1.3px;
-    border: 0.2px solid #010101;
-  }
-
-  input[type=range]::-webkit-slider-thumb {
-    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-    border: 1px solid #000000;
-    height: 21px;
-    width: 31px;
-    border-radius: 3px;
-    background: #ffffff;
-    cursor: pointer;
-    -webkit-appearance: none;
-    margin-top: -6.5px;
-  }
-
-// input[type="button"]:hover, input[type="submit"]:hover {
-//     transform: scale(1.1);
-//     box-shadow: 7px 6px 5px 0px rgba(0,0,0,0.75);
-//     -webkit-box-shadow: 7px 6px 5px 0px rgba(0,0,0,0.75);
-//     -moz-box-shadow: 7px 6px 5px 0px rgba(0,0,0,0.75);
-// }
