@@ -7,9 +7,9 @@
 }
 
 
-.mobile {
-    display: none;
-}
+// .mobile {
+//     display: none;
+// }
 
 .quiz-container {
     width: 100%;
@@ -38,9 +38,6 @@ form {
     height: 420px;
     border:8px solid $purp;
     text-align: center;
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: center;
     background: $orange;
     border-radius: 10px;
 }
@@ -115,6 +112,10 @@ form {
     img:hover, label:hover {
         cursor: pointer;
     }
+}
+
+fieldset {
+    border: none;
 }
 
 

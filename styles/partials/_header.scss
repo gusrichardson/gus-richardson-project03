@@ -2,10 +2,8 @@
     width: 100vw;
     height: 100vh;
     display: flex;
-    // background-image: linear-gradient(45deg, $turq, $orange);
     background: $turq;
     align-items: center;
-    // justify-content: center;
     flex-direction: column;
     padding-top: 80px;
 }
@@ -34,26 +32,4 @@
     display: none;
 }
 
-#cast{
-    width: 200px;
-    height: 500px;
-    position: relative;
-    animation: floatBubble 2s inifnate;
-    animation-directon: normal;
-    }
     
-    
-    @keyframes floatBubble{
-     0% {
-            top:0;
-            -webkit-animation-timing-function: ease-in;
-    
-       }
-    
-    
-       100% {
-          top: 500px;
-          animation-timing-function: ease-out;
-       }
-    
-    }

@@ -8,8 +8,6 @@
     <title>FAIL GENERATOR</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:700|Sigmar+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-        crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
@@ -32,8 +30,9 @@
         <div class="quiz-container" id="quiz-container">
 
             <form action="">
-                <div class="opener">
-                    <p>Painful or Embarrassing?<br> <span class="capitalize">You</span> decide!</p>
+                <fieldset class="opener">
+                    <!-- <div class="opener"> -->
+                    <legend>Painful or Embarrassing? <br><span class="capitalize">You</span> decide!</legend>
                     <label for="painful-failure">Painful</label>
                     <input type="radio" name="painful-embarrassing" id="painful-failure" value="painful">
                     <br class="mobile">
@@ -41,10 +40,12 @@
                     <label for="embarrassing-failure">Embarassing</label>
                     <input type="radio" name="painful-embarrassing" id="embarrassing-failure" value="embarrassing">
                     <br class="mobile">
-                </div>
+                    <!-- </div> -->
+                </fieldset>
 
-                <div class="second-question" id="second-question">
-                    <p id="second-question-text"></p>
+                <fieldset class="second-question" id="second-question">
+                    <!-- <div class="second-question" id="second-question"> -->
+                    <legend id="second-question-text"></legend>
 
                     <label for="babies">Baby Fails</label>
                     <input type="radio" id="babies" name="category" value="babies">
@@ -60,20 +61,22 @@
 
                     <label for="sports">Sports Fail</label>
                     <input type="radio" id="sports" name="category" value="sports">
-                </div>
+                    <!-- </div> -->
+                </fieldset>
 
-                <div class="third-question" id="third-question">
-                    <p id="third-question-text"></p>
+                <fieldset class="third-question" id="third-question">
+                    <!-- <div class="third-question" id="third-question"> -->
+                    <legend id="third-question-text"></legend>
 
                     <label for="intensity">How intense?</label>
                     <input type="range" id="intensity" name="intensity" min="1" max="2">
                     <input type="button" id="intensity-button" value="Intensity Submit">
+                    <!-- </div> -->
+                </fieldset>
 
-                </div>
-
-                <div class="fourth-question" id="fourth-question">
-
-                    <p>Are you sure?</p>
+                <fieldset class="fourth-question" id="fourth-question">
+                    <!-- <div class="fourth-question" id="fourth-question"> -->
+                    <legend>Are you sure?</legend>
                     <label for="proceed">Yes! Fail me now!</label>
                     <input type="radio" id="proceed" name="to-continue" value="proceed">
                     <br class="mobile">
@@ -82,7 +85,8 @@
                     <input type="radio" id="do-not-proceed" name="to-continue" value="do-not-proceed">
                     <br>
                     <input type="submit" id="submit-button" value="Submit!">
-                </div>
+                    <!-- </div> -->
+                </fieldset>
                 <div class="start-over-container animated fadeIn">
                     <h3 class="animated fadeIn 2s">Thanks<span> for playing!</span></h3>
                     <img src="images/start-over.png" alt="a fired banker carrying a box of belongings" id="start-over"
@@ -103,8 +107,6 @@
     <div id="magic-sound">
         <audio src="audio/rattle-trimmed.m4a" id="rattle"></audio>
     </div>
-
-
     <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='
         crossorigin='anonymous'></script>
     <script src="js/jQuery.js"></script>

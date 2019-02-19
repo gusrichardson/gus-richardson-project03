@@ -148,10 +148,11 @@ h2 {
   font-size: 35px;
   margin: 5px 0 0 0; }
 
-p {
+legend {
   font-family: 'Lato', sans-serif;
   font-size: 25px;
-  color: #530096; }
+  color: #530096;
+  margin: 10px 0; }
 
 label {
   font-family: 'Lato', sans-serif;
@@ -201,40 +202,11 @@ h3 {
 .mobile {
   display: none; }
 
-#cast {
-  width: 200px;
-  height: 500px;
-  position: relative;
-  -webkit-animation: floatBubble 2s inifnate;
-  animation: floatBubble 2s inifnate;
-  animation-directon: normal; }
-
-@-webkit-keyframes floatBubble {
-  0% {
-    top: 0;
-    -webkit-animation-timing-function: ease-in; }
-  100% {
-    top: 500px;
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out; } }
-
-@keyframes floatBubble {
-  0% {
-    top: 0;
-    -webkit-animation-timing-function: ease-in; }
-  100% {
-    top: 500px;
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out; } }
-
 .wrapper {
   width: 100vw;
   height: 100vh;
   padding: 60px;
   background: #16f0f7; }
-
-.mobile {
-  display: none; }
 
 .quiz-container {
   width: 100%;
@@ -333,6 +305,9 @@ form {
   .start-over-container img:hover, .start-over-container label:hover {
     cursor: pointer; }
 
+fieldset {
+  border: none; }
+
 @media only screen and (max-width: 1230px) {
   h1 {
     font-size: 140px;
@@ -358,6 +333,8 @@ form {
   form {
     width: 80%;
     text-align: center; }
+    form legend {
+      margin: 10px auto; }
   .answer {
     margin-top: 40px;
     width: 80%;
