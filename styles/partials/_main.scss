@@ -6,11 +6,6 @@
     background:  $turq;
 }
 
-
-// .mobile {
-//     display: none;
-// }
-
 .quiz-container {
     width: 100%;
     padding: 40px;
@@ -97,7 +92,6 @@ form {
     background: $yell;
     top: 0;
     text-align: center;
-    padding-top: 20px;
     display: none;
     h3 {
         transform: rotate(-15deg);
@@ -108,6 +102,7 @@ form {
     }
     #start-over-label {
         display: block;
+        // margin: 10px 0;
     }
     img:hover, label:hover {
         cursor: pointer;

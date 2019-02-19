@@ -193,20 +193,22 @@ const failures = {
 
 $(document).ready(function () {
 
-    const arrowBounce = $('.down-arrow').hover(
+    // Apply fade-in and bounce animation to New Coke arrow
+    const arrowBounce = $('.coke-arrow').hover(
         function () { $(this).removeClass('fadeIn delay-1s').addClass('bounce') },
         function () { $(this).removeClass('bounce') }
     )
 
-    const arrowScroll = $('.down-arrow').on('click', function () {
+    // scroll to quiz on Coke arrow click
+    const arrowScroll = $('.coke-arrow').on('click', function () {
         $('html, body').animate({
             scrollTop: $('#quiz-container').offset().top
         }, 1000);
     });
 });
 
+//once form is submitted replace form with overlay containing refresh button
 const restart = $('#submit-button').on('click', function () {
-
     setTimeout(function () {
         $('.start-over-container').css({
             "display": "block",
@@ -226,10 +228,12 @@ const restart = $('#submit-button').on('click', function () {
     });
 });
 
+//reload page when start-over icon is clicked
 const refreshPage = $('.start-over').on('click', function () {
     location.reload(true);
 });
 
+//store user input for question one, display next question. If form is in mobile/ column mode, scroll to next question
 const questionOne = $('input[name=painful-embarrassing').on('click', function () {
     if ($(window).width() < 1140) {
         const genre = $('input[name=painful-embarrassing]:checked').val();
@@ -248,7 +252,7 @@ const questionOne = $('input[name=painful-embarrassing').on('click', function ()
         $('#second-question-text').html(`What kind of ${genre} fail?`);
     };
 
-
+    //repeat for question two
     const questionTwo = $('input[name=category]').on('click', function () {
         if ($(window).width() < 1140) {
             const genre = $('input[name=painful-embarrassing]:checked').val();
@@ -268,6 +272,7 @@ const questionOne = $('input[name=painful-embarrassing').on('click', function ()
         }
     });
 
+    //repeat for question three
     const questionThree = $('#intensity-button').click(function (e) {
         e.preventDefault;
         if ($(window).width() < 1140) {
@@ -289,12 +294,11 @@ const questionOne = $('input[name=painful-embarrassing').on('click', function ()
         return optionsArray[index];
     }
 
+    // Generate random fail gif based on user preferences when form is submitted
     $('form').on('submit', function (e) {
         e.preventDefault();
 
-        //babies/ non-babies/ etc
         const demographic = $('input[name=category]:checked').val();
-        //painful or embarrassing
         const genre = $('input[name=painful-embarrassing]:checked').val();
         const intensity = parseInt($('input[name=intensity').val());
         const proceed = $('input[name=to-continue]:checked').val();
@@ -314,7 +318,7 @@ const questionOne = $('input[name=painful-embarrassing').on('click', function ()
                 randomVid(failOpIntensity);
             };
         }
-
+        //if user is in mobile/ column mode swap the direction of the column so that gif is on top and overlay on bottom
         if (proceed === 'proceed' && $(window).width() < 1140) {
             $('.quiz-container').css({
                 "padding": "10px 20px",
@@ -349,7 +353,8 @@ const questionOne = $('input[name=painful-embarrassing').on('click', function ()
             setTimeout(function () {
                 $('.gif-container').html('<img src="images/feel-good.gif" alt="Bob Ross pets a baby deer">')
             }, 1000);
-        } else if (proceed === "proceed") {
+        } //if not in mobile/ column mode display amswer normally 
+        else if (proceed === "proceed") {
             document.getElementById('rattle').play();
             $('.answer').addClass('animated shake');
             setTimeout(function () {

@@ -289,7 +289,6 @@ form {
   background: #ffeb2b;
   top: 0;
   text-align: center;
-  padding-top: 20px;
   display: none; }
   .start-over-container h3 {
     -webkit-transform: rotate(-15deg);
@@ -344,8 +343,8 @@ fieldset {
   h1 {
     font-size: 120px;
     line-height: 120px; }
-  .arrow-container i {
-    font-size: 5rem; } }
+  .start-over-container {
+    padding-top: 20px; } }
 
 @media only screen and (max-width: 860px) {
   h1 {
