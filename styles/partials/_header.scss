@@ -7,9 +7,6 @@
     flex-direction: column;
     padding-top: 80px;
 }
-.arrow-container {
-    margin-top: 100px;
-}
 
 .img-container img {
     display: block;
@@ -19,12 +16,13 @@
     margin: 0;
 }
 
-.arrow-container {
+.coke-container {
+    margin-top: 100px;
     width: 100%;
     text-align: center;
 }
 
-.arrow-container img:hover {
+.coke-container img:hover {
     cursor: pointer;
 }
 

@@ -13,25 +13,26 @@
 </head>
 
 <body>
+    <!-- BEGIN HEADER -->
     <header class="banner">
         <div class="title-container">
             <h1 class="title animated slideInLeft">Fail</h1>
             <h1 class="title animated slideInRight">Generator</h1>
+            <!-- MOBILE TITLE -->
             <h1 class="mobile">Fail <span>Gener-</span><span>Ator</span></h1>
         </div>
-        <div class="arrow-container">
+        <div class="coke-container">
             <img src="images/smaller-coke.png" alt="a can of New Coke" class="down-arrow animated fadeIn delay-1s" id="arrow">
         </div>
     </header>
 
-
-    <div class="wrapper">
-
+    <!-- MAIN SECTION -->
+    <main class="wrapper">
         <div class="quiz-container" id="quiz-container">
-
+            <!-- FORM -->
             <form action="">
+                <!-- QUESTION ONE -->
                 <fieldset class="opener">
-                    <!-- <div class="opener"> -->
                     <legend>Painful or Embarrassing? <br><span class="capitalize">You</span> decide!</legend>
                     <label for="painful-failure">Painful</label>
                     <input type="radio" name="painful-embarrassing" id="painful-failure" value="painful">
@@ -40,11 +41,10 @@
                     <label for="embarrassing-failure">Embarassing</label>
                     <input type="radio" name="painful-embarrassing" id="embarrassing-failure" value="embarrassing">
                     <br class="mobile">
-                    <!-- </div> -->
                 </fieldset>
 
+                <!-- QUESTION TWO -->
                 <fieldset class="second-question" id="second-question">
-                    <!-- <div class="second-question" id="second-question"> -->
                     <legend id="second-question-text"></legend>
 
                     <label for="babies">Baby Fails</label>
@@ -61,21 +61,19 @@
 
                     <label for="sports">Sports Fail</label>
                     <input type="radio" id="sports" name="category" value="sports">
-                    <!-- </div> -->
                 </fieldset>
 
+                <!-- QUESTION THREE -->
                 <fieldset class="third-question" id="third-question">
-                    <!-- <div class="third-question" id="third-question"> -->
                     <legend id="third-question-text"></legend>
 
                     <label for="intensity">How intense?</label>
                     <input type="range" id="intensity" name="intensity" min="1" max="2">
                     <input type="button" id="intensity-button" value="Intensity Submit">
-                    <!-- </div> -->
                 </fieldset>
 
+                <!-- QUESTION FOUR -->
                 <fieldset class="fourth-question" id="fourth-question">
-                    <!-- <div class="fourth-question" id="fourth-question"> -->
                     <legend>Are you sure?</legend>
                     <label for="proceed">Yes! Fail me now!</label>
                     <input type="radio" id="proceed" name="to-continue" value="proceed">
@@ -85,8 +83,9 @@
                     <input type="radio" id="do-not-proceed" name="to-continue" value="do-not-proceed">
                     <br>
                     <input type="submit" id="submit-button" value="Submit!">
-                    <!-- </div> -->
                 </fieldset>
+
+                <!-- START-OVER/ REFRESH OVERLAY -->
                 <div class="start-over-container animated fadeIn">
                     <h3 class="animated fadeIn 2s">Thanks<span> for playing!</span></h3>
                     <img src="images/start-over.png" alt="a fired banker carrying a box of belongings" id="start-over"
@@ -94,6 +93,9 @@
                     <label for="start-over" class="start-over" id="start-over-label">Start Over!</label>
                 </div>
             </form>
+            <!-- END OF FORM CONTAINER -->
+
+            <!-- GIF ANSWER CONTAINER -->
             <div class="answer">
                 <div class="gif-container">
                     <img src="images/static-screen.gif" alt="a static TV screen">
@@ -103,10 +105,13 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div id="magic-sound">
-        <audio src="audio/rattle-trimmed.m4a" id="rattle"></audio>
-    </div>
+    </main>
+    <!-- END OF MAIN -->
+
+    <!-- RATTLE SOUND EFFECT -->
+    <audio src="audio/rattle-trimmed.m4a" id="rattle"></audio>
+
+    <!-- JQUERY SCRIPTS -->
     <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='
         crossorigin='anonymous'></script>
     <script src="js/jQuery.js"></script>
